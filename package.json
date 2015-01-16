@@ -1,7 +1,7 @@
 {
   "name": "MVS UI",
   "project": "mvsui",
-  "description": "An administrator panel for enterprise.",
+  "description": "An administration page framework for enterprise.",
   "version": "0.0.000",
   "keywords": [
     "css",
