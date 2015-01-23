@@ -55,25 +55,18 @@ body {
 /* sidebar menu lv1 */
 .mvsui-side-left > ul > li > a {
   border-bottom: 0.1rem solid #fff;
-  padding: 1rem 2rem;
   background: #efefef;
   color: #0d3276;
-  font-weight: bold;
 }
 .mvsui-side-left > ul > li > a > i {
   color: #0d3276;
 }
 .mvsui-side-left > ul > li > a:hover,
 .mvsui-side-left > ul > li > .active {
-/*
-  background: #1f87c9;
-  color: #fff;
-*/
   background: #fff;
 }
 .mvsui-side-left > ul ul {
   background: #fff;
-  padding-bottom: 1rem;
 }
 .mvsui-side-left > ul > li li > a:hover,
 .mvsui-side-left > ul > li li > .active {
@@ -81,26 +74,8 @@ body {
 }
 
 /* sidebar menu lv2 */
-.mvsui-side-left > ul > li > ul > li > a {
-  padding: 1rem 2rem 1rem 4.4rem;
-  font-weight: bold;
-}
 .mvsui-side-left > ul > li > ul > li > a > i {
   color: #0d3276;
-}
-
-/* sidebar menu lv3 */
-.mvsui-side-left > ul > li > ul > li > ul {
-
-}
-.mvsui-side-left > ul > li > ul > li > ul > li > a {
-  padding: 0.5rem 2rem 0.4rem 5.8rem;
-}
-
-/* sidebar menu lv4 */
-.mvsui-side-left > ul > li > ul > li > ul > li > ul > li > a {
-  padding: 0.5rem 0;
-  text-align: center;
 }
 
 
