@@ -1,7 +1,6 @@
 body {
   background: #efefef;
 }
-
 .mvsui-topbar {
   background: #1d1a37;
   color: #fff;
@@ -15,7 +14,6 @@ body {
 .mvsui-topbar > div > span > a:hover {
   color: #fff;
 }
-
 .mvsui-header {
   background: #0d3276;
 }
@@ -26,7 +24,6 @@ body {
 .mvsui-header > h1 > small {
   color: #aaa;
 }
-
 .mvsui-navbar {
   background: #1f87c9;
 }
@@ -39,14 +36,13 @@ body {
   background: #efefef;
   color: #1f87c9;
 }
-
 .mvsui-side-left {
   border: 0.1rem solid #efefef;
+  border-right-color: #fff;
 }
 .mvsui-side-left > h4 {
   color: #ccc;
 }
-
 .mvsui-side-left li > a {
   display: block;
   text-decoration: none;
@@ -78,7 +74,6 @@ body {
   color: #0d3276;
 }
 
-
 .mvsui-footer {
   width: 100%;
   padding: 0.5rem;
@@ -86,15 +81,137 @@ body {
   color: #efefef;
 }
 
+/* main page */
+.mvsui-main {
+  background: #fff;
+}
+.mvsui-page {
+  border: 0.1rem solid #ddd;
+}
+.mvsui-page > h2 {
+  color: #0d3276;
+  border-bottom: 0.1rem solid #ddd;
+}
 
+/* form styl 1 */
+.mvsui-form1 {
+}
+.mvsui-form1 > fieldset > legend {
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.5rem 0;
+}
+.mvsui-form1-unit > label:first-child,
+.mvsui-form1-textarea > label {
+  width: 12rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  background: #ddd;
+  border-radius: 0.2rem 0 0 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mvsui-form1-unit > label {
+  font-size: 1.4rem;
+}
+.mvsui-form1-unit > input[type="text"],
+.mvsui-form1-unit > .select {
+  width: calc(100% - 12rem);
+  font-size: 1.4rem;
+  border: 0.1rem solid #ddd;
+  border-left: none;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+.mvsui-form1-unit > .select > i {
+  font-size: 1.2rem;
+  padding-top: 0.4rem;
+}
+.mvsui-form1-unit > .options {
+  margin: -0.4rem 0 0 12rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid #ddd;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.4rem;
+}
+.mvsui-form1-unit > .options > li:hover {
+  color: #1f87c9;
+}
+.mvsui-form1-unit > p,
+.mvsui-form1-textarea > p {
+  font-size: 1.2rem;
+  color: #a00101;
+  padding: 0 0 0.4rem 0.7rem;
+}
+.mvsui-form1-textarea > textarea {
+  width: 100%;
+  height: 6rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid #ddd;
+  border-left: none;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+.mvsui-form1 .normal {
+}
+.mvsui-form1 .warning > label {
+  background: #a00101;
+  color: #ffe89c;
+}
+.mvsui-form1 .warning > input[type="text"] {
+  border-color: #a00101;
+}
 
-
-
-
-
-
-
-
-
-
-
+/* form styl 2 */
+.mvsui-form2 {
+}
+.mvsui-form2 > fieldset > legend {
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.5rem 0;
+  color: #0d3276;
+}
+.mvsui-form2-unit > label:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d3276;
+}
+.mvsui-form2-unit > label {
+  font-size: 1.4rem;
+}
+.mvsui-form2-unit > input[type="text"],
+.mvsui-form2-unit > .select,
+.mvsui-form2-unit > textarea {
+  width: 100%;
+  font-size: 1.4rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.2rem;
+}
+.mvsui-form2-unit > .select > i {
+  font-size: 1.2rem;
+  padding-top: 0.4rem;
+}
+.mvsui-form2-unit > .options {
+  margin: -0.2rem 0 0 0;
+  font-size: 1.4rem;
+  border: 0.1rem solid #ddd;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.4rem;
+}
+.mvsui-form2-unit > .options > li:hover {
+  color: #1f87c9;
+}
+.mvsui-form2-unit > textarea {
+  height: 6rem;
+}
+.mvsui-form2 .normal {
+}
+.mvsui-form2 .warning > label {
+  color: #a00101;
+}
+.mvsui-form2 .warning > input[type="text"],
+.mvsui-form2 .warning > textarea {
+  border-color: #a00101;
+}
