@@ -1,6 +1,5 @@
 /* ==========================================================================
- * grunt.js - gruntfile for Condiments
- * version 0.0.200: 2014.12.16
+ * grunt.js - gruntfile for mvs-ui
  * --------------------------------------------------------------------------
  * Copyright tjcccc
  * Licensed under MIT
@@ -31,8 +30,8 @@ module.exports = function (grunt) {
       },
       css: {
         files: {
-          "dev/css/mvsui-common-resorted.css": ['dev/css/mvsui-common.css'],
-          "dev/css/mvsui-function-resorted.css": ['dev/css/mvsui-function.css'],
+          "dev/css/mvsui-resorted.css": ['dev/css/mvsui.css'],
+          // "dev/css/mvsui-function-resorted.css": ['dev/css/mvsui-function.css'],
           "dev/theme/default/style-resorted.css": ['dev/theme/default/style.css']
         }
       }
@@ -57,8 +56,8 @@ module.exports = function (grunt) {
 //      },
       css: {
         src: [
-          'dev/css/mvsui-common-resorted.css',
-          'dev/css/mvsui-function-resorted.css'
+          'dev/css/mvsui-resorted.css'
+          // 'dev/css/mvsui-function-resorted.css'
         ],
         dest: 'dist/css/<%= pkg.project %>.css'
       }
@@ -86,6 +85,13 @@ module.exports = function (grunt) {
           'dist/css/mvsui.min.css': ['dist/css/mvsui.css']
         }
       }
+    },
+    less: {
+      development: {
+        files: {
+          "dev/css/mvsui-grid.css": "dev/less/mvsui-grid.less"
+        }
+      }
     }
 
   });
@@ -103,8 +109,14 @@ module.exports = function (grunt) {
   // Load the plugin that provides the "cssmin" task.
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
+  // Load the plugin that provides the "less" task.
+  grunt.loadNpmTasks('grunt-contrib-less');
+
 
   // Default task(s).
   grunt.registerTask('default', ['clean:dist', 'csscomb', 'concat', 'copy:fonts', 'clean:cssresorted', 'uglify', 'cssmin']);
+
+  // LESS to CSS.
+  grunt.registerTask('less2css',['less']);
 
 };

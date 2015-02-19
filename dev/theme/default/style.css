@@ -93,7 +93,7 @@ body {
   border-bottom: 0.1rem solid #ddd;
 }
 
-/* form styl 1 */
+/* form style 1 */
 .mvsui-form1 {
 }
 .mvsui-form1 > fieldset > legend {
@@ -122,6 +122,12 @@ body {
   border: 0.1rem solid #ddd;
   border-left: none;
   border-radius: 0 0.2rem 0.2rem 0;
+  outline: none;
+}
+.mvsui-form1-unit > input[type="text"]:focus,
+.mvsui-form1-unit > .select:focus,
+.mvsui-form1-textarea > textarea:focus {
+  box-shadow: 0 0 0.2rem 0.1rem #f0f0f0 inset;
 }
 .mvsui-form1-unit > .select > i {
   font-size: 1.2rem;
@@ -138,12 +144,6 @@ body {
 .mvsui-form1-unit > .options > li:hover {
   color: #1f87c9;
 }
-.mvsui-form1-unit > p,
-.mvsui-form1-textarea > p {
-  font-size: 1.2rem;
-  color: #a00101;
-  padding: 0 0 0.4rem 0.7rem;
-}
 .mvsui-form1-textarea > textarea {
   width: 100%;
   height: 6rem;
@@ -152,6 +152,7 @@ body {
   border: 0.1rem solid #ddd;
   border-left: none;
   border-radius: 0 0.2rem 0.2rem 0;
+  outline: none;
 }
 .mvsui-form1 .normal {
 }
@@ -163,7 +164,7 @@ body {
   border-color: #a00101;
 }
 
-/* form styl 2 */
+/* form style 2 */
 .mvsui-form2 {
 }
 .mvsui-form2 > fieldset > legend {
@@ -187,6 +188,14 @@ body {
   font-size: 1.4rem;
   border: 0.1rem solid #ddd;
   border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.1rem 0rem #efefef inset;
+  outline: none;
+}
+.mvsui-form2-unit > input[type="text"]:focus,
+.mvsui-form2-unit > .select:focus,
+.mvsui-form2-unit > textarea:focus {
+  border: 0.1rem solid #ccc;
+  box-shadow: 0 0 0.4rem 0.2rem #efefef;
 }
 .mvsui-form2-unit > .select > i {
   font-size: 1.2rem;
@@ -214,4 +223,15 @@ body {
 .mvsui-form2 .warning > input[type="text"],
 .mvsui-form2 .warning > textarea {
   border-color: #a00101;
+}
+
+
+/* mvsui graphs - echarts */
+.mvsui-charts {}
+.mvsui-chart1 {
+  border: 0.1rem solid #efefef;
+  border-radius: 0.2rem;
+}
+.mvsui-chart1 .echarts-dataview {
+
 }

@@ -2,6 +2,7 @@ require.config({
   paths: {
     'jquery': 'jquery.min',
     'bootstrap': 'bootstrap.min',
+    'zrender': 'zrender',
     'condiments': 'condiments.min'
   }
 });
@@ -9,5 +10,6 @@ require.config({
 require([
   'jquery',
   'bootstrap',
+  'zrender',
   'condiments'
 ]);

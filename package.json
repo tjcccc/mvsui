@@ -1,8 +1,8 @@
 {
-  "name": "MVS UI",
+  "name": "mvs-ui",
   "project": "mvsui",
   "description": "An administration page framework for enterprise.",
-  "version": "0.0.100",
+  "version": "0.2.0",
   "keywords": [
     "css",
     "javascript",
@@ -10,18 +10,18 @@
     "framework",
     "web"
   ],
-  "homepage": "https://github.com/tjcccc/mvsui",
+  "homepage": "https://github.com/tjcccc/mvs-ui",
   "author": "tjcccc",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tjcccc/mvsui.git"
+    "url": "https://github.com/tjcccc/mvs-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/tjcccc/mvsui/issues"
+    "url": "https://github.com/tjcccc/mvs-ui/issues"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/tjcccc/mvsui/LICENSE"
+    "url": "https://github.com/tjcccc/mvs-ui/LICENSE"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -30,11 +30,12 @@
     "grunt-contrib-concat": "~0.5.0",
     "grunt-contrib-connect": "~0.9.0",
     "grunt-contrib-copy": "~0.7.0",
+    "grunt-contrib-cssmin": "~0.10.0",
     "grunt-contrib-less": "~0.12.0",
     "grunt-contrib-uglify": "~0.6.0",
-    "grunt-contrib-cssmin": "~0.10.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-csscomb": "~3.0.0",
+    "grunt-jsbeautifier": "latest",
     "load-grunt-tasks": "~1.0.0",
     "time-grunt": "~1.0.0"
   },

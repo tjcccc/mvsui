@@ -1,6 +1,6 @@
 {
   "name": "mvsui",
-  "version": "0.0.100",
+  "version": "0.2.0",
   "homepage": "https://github.com/tjcccc/mvsui",
   "authors": [
     "tjcccc <tttjjjccc@gmail.com>"
@@ -30,6 +30,9 @@
     "jquery": "latest",
     "bootstrap": "latest",
     "fontawesome": "latest",
-    "requirejs": "latest"
+    "requirejs": "latest",
+    "less": "latest",
+    "zrender": "latest",
+    "echarts": "latest"
   }
 }

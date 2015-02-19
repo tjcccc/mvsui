@@ -1,6 +1,8 @@
 body {
   font-size: 62.5%;
 }
+
+/* topbar */
 .mvsui-topbar {
   padding: 0.5rem;
 }
@@ -22,6 +24,8 @@ body {
 .mvsui-topbar > div > span:first-child {
   margin-left: 0;
 }
+
+/* header */
 .mvsui-header {
   padding: 1rem 2rem;
 }
@@ -108,15 +112,6 @@ body {
 /* form style 1 */
 .mvsui-form1 {
 }
-.mvsui-form1 > fieldset > .row > div {
-  padding: 0 0.5rem;
-}
-.mvsui-form1 > fieldset > .row > div:first-child {
-  padding-left: 1.5rem;
-}
-.mvsui-form1 > fieldset > .row > div:last-child {
-  padding-right: 1.5rem;
-}
 .mvsui-form1-unit {
   font-size: 0;
 }
@@ -163,18 +158,9 @@ body {
 .mvsui-form1-buttons {
   padding: 1rem 0;
 }
-/* form style 2 */
 
+/* form style 2 */
 .mvsui-form2 {
-}
-.mvsui-form2 > fieldset > .row > div {
-  padding: 0 0.5rem;
-}
-.mvsui-form2 > fieldset > .row > div:first-child {
-  padding-left: 1.5rem;
-}
-.mvsui-form2 > fieldset > .row > div:last-child {
-  padding-right: 1.5rem;
 }
 .mvsui-form2-unit {
   font-size: 0;
@@ -206,8 +192,27 @@ body {
 .mvsui-form2-buttons {
   padding: 1rem 0;
 }
-/* footer */
 
+
+/* mvsui graphs - echarts */
+.mvsui-chart1 {
+  height: 30rem;
+  margin: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+.mvsui-chart1:first-child {
+  margin-left: 0;
+}
+.mvsui-chart1:last-child {
+  margin-right: 0;
+}
+.mvsui-chart1 .echarts-dataview {
+  font-size: 1.4rem;
+}
+
+
+
+/* footer */
 .mvsui-footer {
   font-size: 1.2rem;
   text-align: center;
