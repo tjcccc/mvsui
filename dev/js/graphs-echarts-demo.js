@@ -1,7 +1,7 @@
 require.config({
   paths: {
-    echarts: '../components/echarts',
-    theme: '../theme/default'
+    echarts: '../dev/components/echarts',
+    theme: '../dev/theme/default'
   }
 });
 
@@ -16,15 +16,14 @@ require(
     'echarts/chart/map',
     'echarts/chart/gauge'
   ],
-  function (ec) {
-    'use strict';
+  function (ec, theme) {
     
-    var echart01 = ec.init(document.getElementById('echart01'), mvsui);
-    var echart02 = ec.init(document.getElementById('echart02'), mvsui);
-    var echart03 = ec.init(document.getElementById('echart03'), mvsui);
-    var echart04 = ec.init(document.getElementById('echart04'), mvsui);
-    var echart05 = ec.init(document.getElementById('echart05'), mvsui);
-    var echart06 = ec.init(document.getElementById('echart06'), mvsui);
+    var echart01 = ec.init(document.getElementById('echart01'), theme);
+    var echart02 = ec.init(document.getElementById('echart02'), theme);
+    var echart03 = ec.init(document.getElementById('echart03'), theme);
+    var echart04 = ec.init(document.getElementById('echart04'), theme);
+    var echart05 = ec.init(document.getElementById('echart05'), theme);
+    var echart06 = ec.init(document.getElementById('echart06'), theme);
     
     var option01 = {
       title: {
@@ -1393,7 +1392,7 @@ require(
           markPoint: {
             symbol: 'emptyCircle',
             symbolSize: function (v) {
-              return 10 + v / 100
+              return 10 + v / 100;
             },
             effect: {
               show: true,
