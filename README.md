@@ -1,5 +1,5 @@
 # mvs-ui
 
-An administration page framework for enterprise.
+An administration ui framework.
 
 Not ready.
