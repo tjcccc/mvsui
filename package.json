@@ -1,43 +1,63 @@
 {
-  "name": "mvs-ui",
+  "name": "mvsui",
   "project": "mvsui",
-  "description": "An administration page framework for enterprise.",
-  "version": "0.2.1",
+  "description": "An administration UI framework.",
+  "version": "0.3.0",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "dir": "npm ls --depth=0",
+    "scss": "scss --update --style compressed app:app scss/default/mvsui.scss:style/default/default.css",
+    "scss watch": "scss --watch --style compressed app:app scss/default/mvsui.scss:style/default/default.css"
+  },
   "keywords": [
-    "css",
-    "javascript",
-    "front-end",
-    "framework",
-    "web"
+    "mvsui",
+    "angular2",
+    "bootstrap",
+    "administration",
+    "framework"
   ],
-  "homepage": "https://github.com/tjcccc/mvs-ui",
-  "author": "tjcccc",
+  "homepage": "https://github.com/tjcccc/mvsui",
+  "author": "seesaw game",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tjcccc/mvs-ui.git"
+    "url": "https://github.com/tjcccc/mvsui.git"
   },
   "bugs": {
-    "url": "https://github.com/tjcccc/mvs-ui/issues"
+    "url": "https://github.com/tjcccc/mvsui/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/tjcccc/mvs-ui/LICENSE"
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.2",
+    "@angular/compiler": "2.0.0-rc.2",
+    "@angular/core": "2.0.0-rc.2",
+    "@angular/http": "2.0.0-rc.2",
+    "@angular/platform-browser": "2.0.0-rc.2",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.2",
+    "@angular/router": "2.0.0-rc.2",
+    "@angular/router-deprecated": "2.0.0-rc.2",
+    "@angular/upgrade": "2.0.0-rc.2",
+    
+    "systemjs": "0.19.27",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12",
+    
+    "angular2-in-memory-web-api": "0.0.12",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.1"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-banner": "~0.2.3",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-concat": "~0.5.0",
-    "grunt-contrib-connect": "~0.9.0",
-    "grunt-contrib-copy": "~0.7.0",
-    "grunt-contrib-cssmin": "~0.10.0",
-    "grunt-contrib-less": "~0.12.0",
-    "grunt-contrib-uglify": "~0.6.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-csscomb": "~3.0.0",
-    "grunt-jsbeautifier": "latest",
-    "load-grunt-tasks": "~1.0.0",
-    "time-grunt": "~1.0.0"
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings":"^1.0.4",
+    "webpack": "^1.13.1"
   },
-  "private": "true"
+  "private": true
 }

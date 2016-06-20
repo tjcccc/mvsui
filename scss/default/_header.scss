@@ -1,0 +1,10 @@
+.mvsui-header {
+    background: #0d3276;
+    & > h1 {
+        color: #fff;
+        text-shadow: 0.2rem 0.2rem 0 #1d1a37;
+        & > small {
+            color: #aaa;
+        }
+    }
+}

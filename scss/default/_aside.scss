@@ -1,0 +1,44 @@
+.mvsui-aside {
+    border-right-color: #fff;
+    & > h4 {
+        color: #ccc;
+    }
+    & > li > a {
+        display: block;
+        text-decoration: none;
+    }
+    
+    /* sidebar menu lv1 */
+    & > ul {
+        ul {
+            background: #fff;
+        }
+        & > li {
+            li {
+                & > a:hover,
+                & > .active {
+                    color: #0d3276;
+                }
+            }
+            & > a {
+                border-bottom: 0.1rem solid #fff;
+                background: #efefef;
+                color: #0d3276;
+                & > i {
+                    color: #0d3276;
+                }
+            }
+            & > a:hover,
+            & > .active {
+                background: #fff;
+            }
+        }
+    }
+    
+    /* sidebar menu lv2 */
+    & > ul > li > ul > li > a > i {
+        color: #0d3276;
+    }
+}
+
+    

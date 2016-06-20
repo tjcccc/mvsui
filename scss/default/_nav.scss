@@ -1,0 +1,12 @@
+.mvsui-nav {
+    background: #1f87c9;
+    & > li {
+        font-weight: bold;
+        color: #efefef;
+    }
+    & > li:hover,
+    & > .active {
+        background: #efefef;
+        color: #1f87c9;
+    }
+}

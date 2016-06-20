@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW,CACP,SAAS,CAAE,CAAC,CACZ,aAAO,CACH,OAAO,CAAE,YAAY,CACrB,OAAO,CAAE,WAAW,CACpB,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,OAAO",
+"sources": ["nav.component.scss"],
+"names": [],
+"file": "nav.component.css"
+}

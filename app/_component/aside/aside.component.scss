@@ -1,0 +1,69 @@
+.mvsui-aside {
+    box-sizing: border-box;
+    width: 20rem;
+    font-size: 1.4rem;
+    float: left;
+    & > h4 {
+        font-size: 1.4rem;
+        padding: 0.3rem 0 0.3rem 2rem;
+        font-weight: bold;
+    }
+    li {
+        cursor: pointer;
+    }
+    i {
+        margin-right: 0.5rem;
+    }
+    a {
+        outline: none;
+    }
+    
+    /* globale list style */
+    ul,
+    li {
+        a {
+            display: block;
+        }
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* sidebar menu lv1 */
+    & > ul {
+        & > li {
+            & > a {
+                padding: 1rem 2rem;
+                font-weight: bold;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        ul {
+            padding-bottom: 0.1rem;
+            // display: none;
+        }
+    }
+    
+    /* sidebar menu lv2 */
+    & > ul > li > ul {
+        & > li {
+            list-style: disc;
+            & > a {
+                padding: 1rem 2rem 1rem 4.4rem;
+                font-weight: bold;
+            }
+        }
+    } 
+    
+    /* sidebar menu lv3 */
+    & > ul > li > ul > li > ul {
+        display: none;
+        & > li {
+            list-style: square;
+            & > a {
+                padding: 0.5rem 2rem 0.4rem 5.8rem;
+            }
+        }
+    } 
+}

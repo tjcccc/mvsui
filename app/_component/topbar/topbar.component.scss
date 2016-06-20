@@ -1,0 +1,21 @@
+.mvsui-topbar {
+    padding: 0.5rem;
+    & > span {
+        padding-left: 2rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    & > div {
+        padding-right: 2rem;
+        font-size: 1.2rem;
+        & > span {
+            margin-left: 2rem;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 2.5rem;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

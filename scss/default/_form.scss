@@ -1,0 +1,64 @@
+.mvsui-form {
+    li {
+        list-style: none;
+    }
+    & > fieldset > legend {
+        font-size: 1.4rem;
+        border: none;
+        padding: 0.5rem 0;
+        color: #0d3276;
+    }
+    .form-group {
+        & > label {
+            font-size: 1.4rem;
+            &:first-child {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #0d3276;
+            }
+        }
+        & > input[type="text"],
+        & > input[type="number"],
+        & > input[type="password"],
+        & > .select,
+        & > textarea {
+            width: 100%;
+            font-size: 1.4rem;
+            border: 0.1rem solid #ddd;
+            border-radius: 0.2rem;
+            box-shadow: 0 0.1rem 0.1rem 0rem #efefef inset;
+            outline: none;
+            &:focus {
+                border: 0.1rem solid #ccc;
+                box-shadow: 0 0 0.4rem 0.2rem #efefef;
+            }
+        }
+        & > .select > i {
+            font-size: 1.2rem;
+            padding-top: 0.4rem;
+        }
+        & > .option-group {
+            margin: -0.2rem 0 0 0;
+            font-size: 1.4rem;
+            border: 0.1rem solid #ddd;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 0.4rem;
+            & > li:hover {
+                color: #1f87c9;
+            }
+        }
+        & > textarea {
+            height: 6rem;
+        } 
+    }
+    .waring {
+        & > label {
+            color: #a00101;
+        }
+        & > input[type="text"],
+        & > textarea {
+            border-color: #a00101;
+        }
+    }
+}

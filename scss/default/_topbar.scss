@@ -1,0 +1,15 @@
+.mvsui-topbar {
+    background: #1d1a37;
+    color: #fff;
+    & > div > span {
+        & > i {
+            color: #ccc;
+        }
+        & > a:hover {
+            color: #fff;
+        }
+        &:hover > i {
+            color: #fff;
+        }
+    } 
+}
