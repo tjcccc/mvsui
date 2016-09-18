@@ -9,10 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
 var aside_service_1 = require('./aside.service');
-var level_pipe_1 = require('./level.pipe');
-var parent_pipe_1 = require('./parent.pipe');
 var toggle_directive_1 = require('./toggle.directive');
 var AsideComponent = (function () {
     function AsideComponent(asideService) {
@@ -33,9 +30,7 @@ var AsideComponent = (function () {
             selector: 'mvsui-aside',
             templateUrl: 'app/_component/aside/aside.component.html',
             styleUrls: ['app/_component/aside/aside.component.css'],
-            providers: [aside_service_1.AsideService],
-            pipes: [level_pipe_1.LevelPipe, parent_pipe_1.ParentPipe],
-            directives: [router_1.ROUTER_DIRECTIVES, toggle_directive_1.ToggleDirective]
+            providers: [aside_service_1.AsideService]
         }), 
         __metadata('design:paramtypes', [aside_service_1.AsideService])
     ], AsideComponent);

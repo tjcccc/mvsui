@@ -1,5 +1,5 @@
 import { Component, OnInit, Pipe } from '@angular/core';
-import { ROUTER_DIRECTIVES }    from '@angular/router';
+// import { ROUTER_DIRECTIVES }    from '@angular/router';
 import { AsideMenu } from './aside.model';
 import { AsideService } from './aside.service';
 import { LevelPipe } from './level.pipe';
@@ -12,9 +12,9 @@ import { FormComponent } from '../../_component/form/form.component';
   selector: 'mvsui-aside',
   templateUrl: 'app/_component/aside/aside.component.html',
   styleUrls: [ 'app/_component/aside/aside.component.css' ],
-  providers: [ AsideService ],
-  pipes: [ LevelPipe, ParentPipe ],
-  directives: [ ROUTER_DIRECTIVES, ToggleDirective ]
+  providers: [ AsideService ]
+//   pipes: [ LevelPipe, ParentPipe ],
+//   directives: [ ROUTER_DIRECTIVES, ToggleDirective ]
 })
 
 export class AsideComponent implements OnInit {

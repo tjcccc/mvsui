@@ -5,11 +5,11 @@ import { FormComponent } from '../../_component/form/form.component';
 @Component({
     selector: 'mvsui-container',
     templateUrl: 'app/_component/container/container.component.html',
-    styleUrls: [ 'app/_component/container/container.component.css' ],
-    directives: [
-        DashboardComponent,
-        FormComponent
-    ]
+    styleUrls: [ 'app/_component/container/container.component.css' ]
+    // directives: [
+    //     DashboardComponent,
+    //     FormComponent
+    // ]
 })
 
 export class ContainerComponent {}

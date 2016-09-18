@@ -9,8 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var dashboard_component_1 = require('../../_component/dashboard/dashboard.component');
-var form_component_1 = require('../../_component/form/form.component');
 var ContainerComponent = (function () {
     function ContainerComponent() {
     }
@@ -18,11 +16,7 @@ var ContainerComponent = (function () {
         core_1.Component({
             selector: 'mvsui-container',
             templateUrl: 'app/_component/container/container.component.html',
-            styleUrls: ['app/_component/container/container.component.css'],
-            directives: [
-                dashboard_component_1.DashboardComponent,
-                form_component_1.FormComponent
-            ]
+            styleUrls: ['app/_component/container/container.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ContainerComponent);

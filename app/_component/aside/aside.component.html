@@ -4,20 +4,20 @@
     <a [routerLink]="['/form']">Form</a>-->
     <ul>
         <!-- Level 1 -->
-        <li *ngFor="let asideMenu of (asideMenus | level: 1)" id="{{ asideMenu.menuId }}">
-            <a href="{{ asideMenu.link }}">
+        <!--<li *ngFor="let asideMenu of asideMenus)" id="{{ asideMenu.menuId }}">-->
+            <!--<a href="{{ asideMenu.link }}">
                 <i class="{{ asideMenu.iconClass }}"></i>
                 {{ asideMenu.label }}
-            </a>
+            </a>-->
             <!-- Level 2 -->
-            <ul *ngIf="asideMenu" id="{{ asideMenu.menuId }}-children">
-                <li *ngFor="let asideMenu of (asideMenus | level: 2 | parent: asideMenu.menuId)" id="{{ asideMenu.menuId }}">
-                    <a>
+            <!--<ul *ngIf="asideMenu" id="{{ asideMenu.menuId }}-children">
+                <li *ngFor="let asideMenu of asideMenus" id="{{ asideMenu.menuId }}">-->
+                    <!--<a>
                         {{ asideMenu.label }}
-                    </a>
+                    </a>-->
                     <!-- Level 3 -->
-                    <ul *ngIf="asideMenu" id="{{ asideMenu.menuId }}-children">
-                        <li *ngFor="let asideMenu of (asideMenus | level: 3 | parent: asideMenu.menuId)" id="{{ asideMenu.menuId }}">
+                    <!--<ul *ngIf="asideMenu" id="{{ asideMenu.menuId }}-children">
+                        <li *ngFor="let asideMenu of asideMenus" id="{{ asideMenu.menuId }}">
                             <a href="{{ asideMenu.link }}">
                                 {{ asideMenu.label }}
                             </a>
@@ -25,6 +25,6 @@
                     </ul>
                 </li>
             </ul>
-        </li>
+        </li>-->
     </ul>
 </div>

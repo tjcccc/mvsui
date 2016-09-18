@@ -9,13 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var topbar_component_1 = require('./_component/topbar/topbar.component');
-var header_component_1 = require('./_component/header/header.component');
-var nav_component_1 = require('./_component/nav/nav.component');
-var aside_component_1 = require('./_component/aside/aside.component');
-var container_component_1 = require('./_component/container/container.component');
-var footer_component_1 = require('./_component/footer/footer.component');
+// import { ROUTER_DIRECTIVES } from '@angular/router';
+// import { TopbarComponent } from './_component/topbar/topbar.component';
+// import { HeaderComponent } from './_component/header/header.component';
+// import { NavComponent } from './_component/nav/nav.component';
+// import { AsideComponent } from './_component/aside/aside.component';
+// import { ContainerComponent } from './_component/container/container.component';
+// import { FooterComponent } from './_component/footer/footer.component';
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -23,16 +23,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'mvsui',
             templateUrl: 'app/app.component.html',
-            styleUrls: ['app/app.component.scss'],
-            directives: [
-                router_1.ROUTER_DIRECTIVES,
-                topbar_component_1.TopbarComponent,
-                header_component_1.HeaderComponent,
-                nav_component_1.NavComponent,
-                aside_component_1.AsideComponent,
-                container_component_1.ContainerComponent,
-                footer_component_1.FooterComponent
-            ]
+            styleUrls: ['app/app.component.scss']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
