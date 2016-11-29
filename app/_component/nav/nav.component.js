@@ -21,9 +21,10 @@ var NavComponent = (function () {
     }
     NavComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'mvsui-nav',
-            templateUrl: 'app/_component/nav/nav.component.html',
-            styleUrls: ['app/_component/nav/nav.component.css']
+            templateUrl: 'nav.component.html',
+            styleUrls: ['nav.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], NavComponent);

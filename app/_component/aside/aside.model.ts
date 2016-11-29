@@ -1,8 +1,9 @@
 export class AsideMenu {
     constructor(
+        public Id: number,
+        public parentId: number,
         public menuId: string,
-        public levelId: number,
-        public parentId: string,
+        public level: number,
         public label: string,
         public iconClass: string,
         public link: string

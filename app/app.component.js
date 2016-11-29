@@ -9,21 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-// import { ROUTER_DIRECTIVES } from '@angular/router';
-// import { TopbarComponent } from './_component/topbar/topbar.component';
-// import { HeaderComponent } from './_component/header/header.component';
-// import { NavComponent } from './_component/nav/nav.component';
-// import { AsideComponent } from './_component/aside/aside.component';
-// import { ContainerComponent } from './_component/container/container.component';
-// import { FooterComponent } from './_component/footer/footer.component';
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'mvsui',
-            templateUrl: 'app/app.component.html',
-            styleUrls: ['app/app.component.scss']
+            templateUrl: 'app.component.html',
+            styleUrls: ['app.component.scss']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

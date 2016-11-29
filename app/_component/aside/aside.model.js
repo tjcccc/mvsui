@@ -1,9 +1,10 @@
 "use strict";
 var AsideMenu = (function () {
-    function AsideMenu(menuId, levelId, parentId, label, iconClass, link) {
-        this.menuId = menuId;
-        this.levelId = levelId;
+    function AsideMenu(Id, parentId, menuId, level, label, iconClass, link) {
+        this.Id = Id;
         this.parentId = parentId;
+        this.menuId = menuId;
+        this.level = level;
         this.label = label;
         this.iconClass = iconClass;
         this.link = link;

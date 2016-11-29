@@ -9,22 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var LevelPipe = (function () {
-    function LevelPipe() {
+var AsideParentPipe = (function () {
+    function AsideParentPipe() {
     }
-    LevelPipe.prototype.transform = function (value, arg) {
-        var level = arg;
-        return value.filter(function (asideMenu) {
-            return asideMenu.levelId == level;
-        });
+    AsideParentPipe.prototype.transform = function (value, arg) {
+        var parentId = arg;
+        return value.filter(function (asideMenu) { return asideMenu.parentId == parentId; });
     };
-    LevelPipe = __decorate([
+    AsideParentPipe = __decorate([
         core_1.Pipe({
-            name: 'level'
+            name: 'asideParent'
         }), 
         __metadata('design:paramtypes', [])
-    ], LevelPipe);
-    return LevelPipe;
+    ], AsideParentPipe);
+    return AsideParentPipe;
 }());
-exports.LevelPipe = LevelPipe;
-//# sourceMappingURL=level.pipe.js.map
+exports.AsideParentPipe = AsideParentPipe;
+//# sourceMappingURL=aside-parent.pipe.js.map

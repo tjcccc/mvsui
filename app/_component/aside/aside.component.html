@@ -1,30 +1,28 @@
 <div class="mvsui-aside" *ngIf="asideMenus">
     <h4><i class="fa fa-bars fa-fw"></i>Sidebar Menu</h4>
-    <!--<a [routerLink]="['/dashboard']">Dashboard</a>
-    <a [routerLink]="['/form']">Form</a>-->
     <ul>
         <!-- Level 1 -->
-        <!--<li *ngFor="let asideMenu of asideMenus)" id="{{ asideMenu.menuId }}">-->
-            <!--<a href="{{ asideMenu.link }}">
-                <i class="{{ asideMenu.iconClass }}"></i>
-                {{ asideMenu.label }}
-            </a>-->
+        <li *ngFor="let asideMenu1 of (asideMenus | asideLevel: 1)" id="{{asideMenu1.menuId}}">
+            <a routerLink="{{asideMenu1.link}}" routerLinkActive="active">
+                <i class="{{asideMenu1.iconClass}}"></i>
+                {{asideMenu1.label}}
+            </a>
             <!-- Level 2 -->
-            <!--<ul *ngIf="asideMenu" id="{{ asideMenu.menuId }}-children">
-                <li *ngFor="let asideMenu of asideMenus" id="{{ asideMenu.menuId }}">-->
-                    <!--<a>
-                        {{ asideMenu.label }}
-                    </a>-->
+            <ul id="{{asideMenu1.menuId}}-children">
+                <li *ngFor="let asideMenu2 of (asideMenus | asideLevel: 2 | asideParent: asideMenu1.id)" id="{{asideMenu2.menuId}}">
+                    <a routerLink="{{asideMenu2.link}}" routerLinkActive="active">
+                        {{asideMenu2.label}}
+                    </a>
                     <!-- Level 3 -->
-                    <!--<ul *ngIf="asideMenu" id="{{ asideMenu.menuId }}-children">
-                        <li *ngFor="let asideMenu of asideMenus" id="{{ asideMenu.menuId }}">
-                            <a href="{{ asideMenu.link }}">
-                                {{ asideMenu.label }}
+                    <ul id="{{asideMenu2.menuId}}-children">
+                        <li *ngFor="let asideMenu3 of (asideMenus | asideLevel: 3 | asideParent: asideMenu2.id)" id="{{asideMenu3.menuId}}">
+                            <a routerLink="{{asideMenu3.link}}" routerLinkActive="active">
+                                {{asideMenu3.label}}
                             </a>
                         </li>
                     </ul>
                 </li>
             </ul>
-        </li>-->
+        </li>
     </ul>
 </div>

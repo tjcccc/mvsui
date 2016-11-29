@@ -15,9 +15,10 @@ var TopbarComponent = (function () {
     }
     TopbarComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'mvsui-topbar',
-            templateUrl: 'app/_component/topbar/topbar.component.html',
-            styleUrls: ['app/_component/topbar/topbar.component.css']
+            templateUrl: 'topbar.component.html',
+            styleUrls: ['topbar.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], TopbarComponent);

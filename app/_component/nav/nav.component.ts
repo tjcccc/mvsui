@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { NavMenu } from './navmenu';
 
 @Component({
-  selector: 'mvsui-nav',
-  templateUrl: 'app/_component/nav/nav.component.html',
-  styleUrls: [ 'app/_component/nav/nav.component.css' ]
+    moduleId: module.id,
+    selector: 'mvsui-nav',
+    templateUrl: 'nav.component.html',
+    styleUrls: ['nav.component.css']
 })
 
 export class NavComponent {

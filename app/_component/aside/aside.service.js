@@ -9,16 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var aside_data_1 = require('./aside.data');
+var http_1 = require('@angular/http');
+require('rxjs/add/operator/toPromise');
 var AsideService = (function () {
-    function AsideService() {
+    function AsideService(http) {
+        this.http = http;
+        this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
+        // Check your createDb in in-memory-data.service.ts. That's a fake api.
+        this.asideMenusUrl = 'app/asideMenus';
     }
     AsideService.prototype.getAsideMenus = function () {
-        return Promise.resolve(aside_data_1.ASIDEMENUS);
+        return this.http.get(this.asideMenusUrl)
+            .toPromise()
+            .then(function (response) { return response.json().data; })
+            .catch(this.handleError);
+    };
+    AsideService.prototype.handleError = function (error) {
+        console.error('An error occurred', error); // for demo purposes only
+        return Promise.reject(error.message || error);
     };
     AsideService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [http_1.Http])
     ], AsideService);
     return AsideService;
 }());

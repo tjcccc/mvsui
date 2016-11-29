@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mvsui-topbar',
-  templateUrl: 'app/_component/topbar/topbar.component.html',
-  styleUrls: [ 'app/_component/topbar/topbar.component.css' ]
+    moduleId: module.id,
+    selector: 'mvsui-topbar',
+    templateUrl: 'topbar.component.html',
+    styleUrls: ['topbar.component.css']
 })
 
 export class TopbarComponent {

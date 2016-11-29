@@ -17,7 +17,7 @@
     a {
         outline: none;
     }
-    
+
     /* globale list style */
     ul,
     li {
@@ -27,7 +27,7 @@
         margin: 0;
         padding: 0;
     }
-    
+
     /* sidebar menu lv1 */
     & > ul {
         & > li {
@@ -44,7 +44,7 @@
             // display: none;
         }
     }
-    
+
     /* sidebar menu lv2 */
     & > ul > li > ul {
         & > li {
@@ -54,16 +54,16 @@
                 font-weight: bold;
             }
         }
-    } 
-    
+    }
+
     /* sidebar menu lv3 */
     & > ul > li > ul > li > ul {
-        display: none;
+        display: block;
         & > li {
             list-style: square;
             & > a {
                 padding: 0.5rem 2rem 0.4rem 5.8rem;
             }
         }
-    } 
+    }
 }

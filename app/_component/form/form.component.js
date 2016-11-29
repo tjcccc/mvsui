@@ -15,9 +15,10 @@ var FormComponent = (function () {
     }
     FormComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'mvsui-form',
-            templateUrl: 'app/_component/form/form.component.html',
-            styleUrls: ['app/_component/form/form.component.css']
+            templateUrl: 'form.component.html',
+            styleUrls: ['form.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], FormComponent);

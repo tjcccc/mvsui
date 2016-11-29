@@ -15,9 +15,10 @@ var FooterComponent = (function () {
     }
     FooterComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'mvsui-footer',
-            templateUrl: 'app/_component/footer/footer.component.html',
-            styleUrls: ['app/_component/footer/footer.component.scss'],
+            templateUrl: 'footer.component.html',
+            styleUrls: ['footer.component.scss'],
         }), 
         __metadata('design:paramtypes', [])
     ], FooterComponent);

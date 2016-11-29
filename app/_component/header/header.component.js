@@ -16,9 +16,10 @@ var HeaderComponent = (function () {
     }
     HeaderComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'mvsui-header',
-            templateUrl: 'app/_component/header/header.component.html',
-            styleUrls: ['app/_component/header/header.component.css']
+            templateUrl: 'header.component.html',
+            styleUrls: ['header.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], HeaderComponent);

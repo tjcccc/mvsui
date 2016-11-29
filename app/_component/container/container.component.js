@@ -14,9 +14,10 @@ var ContainerComponent = (function () {
     }
     ContainerComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'mvsui-container',
-            templateUrl: 'app/_component/container/container.component.html',
-            styleUrls: ['app/_component/container/container.component.css']
+            templateUrl: 'container.component.html',
+            styleUrls: ['container.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ContainerComponent);

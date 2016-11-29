@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mvsui-header',
-  templateUrl: 'app/_component/header/header.component.html',
-  styleUrls: [ 'app/_component/header/header.component.css' ]
+    moduleId: module.id,
+    selector: 'mvsui-header',
+    templateUrl: 'header.component.html',
+    styleUrls: ['header.component.css']
 })
 
 export class HeaderComponent {

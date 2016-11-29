@@ -9,10 +9,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var aside_service_1 = require('./aside.service');
-var toggle_directive_1 = require('./toggle.directive');
 var AsideComponent = (function () {
-    function AsideComponent(asideService) {
+    function AsideComponent(router, asideService) {
+        this.router = router;
         this.asideService = asideService;
     }
     AsideComponent.prototype.getAsideMenus = function () {
@@ -22,17 +23,14 @@ var AsideComponent = (function () {
     AsideComponent.prototype.ngOnInit = function () {
         this.getAsideMenus();
     };
-    AsideComponent.prototype.toggleSwitch = function () {
-        toggle_directive_1.ToggleDirective;
-    };
     AsideComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'mvsui-aside',
-            templateUrl: 'app/_component/aside/aside.component.html',
-            styleUrls: ['app/_component/aside/aside.component.css'],
-            providers: [aside_service_1.AsideService]
+            templateUrl: 'aside.component.html',
+            styleUrls: ['aside.component.css']
         }), 
-        __metadata('design:paramtypes', [aside_service_1.AsideService])
+        __metadata('design:paramtypes', [router_1.Router, aside_service_1.AsideService])
     ], AsideComponent);
     return AsideComponent;
 }());
