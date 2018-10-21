@@ -57,6 +57,7 @@ _site
 .project
 .settings
 .tmproj
+.sass-cache
 *.esproj
 *.sublime-project
 *.sublime-workspace

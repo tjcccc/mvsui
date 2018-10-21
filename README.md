@@ -1,5 +1,3 @@
-# mvs-ui
+# MVSUI
 
-An administration ui framework.
-
-Not ready.
+UI Library.
