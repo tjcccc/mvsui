@@ -7,8 +7,8 @@
         "tsc": "tsc",
         "tsc:w": "tsc -w",
         "dir": "npm ls --depth=0",
-        "scss": "scss --update --style compressed app:app scss/default/mvsui.scss:style/default/default.css",
-        "scss watch": "scss --watch --style compressed app:app scss/default/mvsui.scss:style/default/default.css"
+        "scss": "sass --update --style compressed scss/mvsui.scss:css/mvsui.css",
+        "scss:watch": "sass --watch --style compressed scss/mvsui.scss:css/mvsui.css"
     },
     "keywords": [
         "mvsui",
@@ -30,11 +30,7 @@
             "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
         }
     ],
-    "dependencies": {
-        "bootstrap": "^3.3.6",
-        "font-awesome": "^4.6.3"
-    },
-    "devDependencies": {
-    },
+    "dependencies": {},
+    "devDependencies": {},
     "private": true
 }

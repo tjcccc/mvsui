@@ -1,3 +1,3 @@
 # MVSUI
 
-UI Library.
+A lightweight CSS Framework.
