@@ -1,0 +1,43 @@
+@import 'spec';
+
+// general size
+
+p {
+  font-size: $font-size-m;
+}
+
+header {
+  font-size: $font-size-m;
+}
+
+nav {
+  font-size: $font-size-l;
+}
+
+main {
+  font-size: $font-size-m;
+}
+
+aside {
+  font-size: $font-size-m;
+}
+
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+
+.font-size-s {
+  font-size: $font-size-s;
+}
+
+.font-size-m {
+  font-size: $font-size-m;
+}
+
+.font-size-l {
+  font-size: $font-size-l;
+}
+
+.font-size-xl {
+  font-size: $font-size-xl;
+}

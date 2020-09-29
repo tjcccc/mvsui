@@ -1,0 +1,45 @@
+// mvsui elements spec design
+
+// basic default value
+
+// margin
+$margin-base: 8px;
+$margin-xs: 1 * $margin-base;
+$margin-s: 2 * $margin-base;
+$margin-m: 4 * $margin-base;
+$margin-l: 6 * $margin-base;
+$margin-xl: 8 * $margin-base;
+
+// padding
+$padding-base: 8px;
+$padding-xs: 1 * $padding-base;
+$padding-s: 2 * $padding-base;
+$padding-m: 4 * $padding-base;
+$padding-l: 6 * $padding-base;
+$padding-xl: 8 * $padding-base;
+
+// font-size
+$font-size-base: 1rem;
+$font-size-xs: 0.9 * $font-size-base;
+$font-size-s: 1.2 * $font-size-base;
+$font-size-m: 1.4 * $font-size-base;
+$font-size-l: 1.8 * $font-size-base;
+$font-size-xl: 2.2 * $font-size-base;
+
+// color
+$white: rgb(255, 255, 255);
+$black: rgb(31, 31, 31);
+$red: rgb(255, 59, 48);
+$orange: rgb(255, 149, 0);
+$yellow: rgb(255, 204, 0);
+$green: rgb(40, 205, 65);
+$indigo: rgb(88, 86, 214);
+$blue: rgb(0, 122, 255);
+$purple: rgb(175, 82, 222);
+$brown: rgb(162, 132, 94);
+$gray: rgb(142, 142, 147);
+$pink: rgb(255, 45, 85);
+$teal: rgb(90, 200, 250);
+
+// darken color
+$darken-amount: 10%;

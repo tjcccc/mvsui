@@ -1,46 +1,6 @@
-// body,
-// div,
-// ul,
-// ol,
-// li,
-// dl,
-// dt,
-// dd,
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// form,
-// legend,
-// fieldset,
-// input,
-// textarea,
-// p,
-// q,
-// blockquote,
-// caption,
-// th,
-// td,
-// header,
-// nav,
-// aside,
-// section,
-// hgroup,
-// article,
-// footer {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// Default values
-$reset-margin: 0 !default;
-$reset-padding: 0 !default;
-
 * {
-  margin: $reset-margin;
-  padding: $reset-padding;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -48,12 +8,12 @@ html {
   word-break: normal;
   -moz-tab-size: 4;
   tab-size: 4;
+  font-size: 62.5%;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.2;
-  // font-size: 62.5%;
 }
 
 img,
@@ -142,31 +102,40 @@ h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 3.2em;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2.8em;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 2.4em;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 2.0em;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 1.8em;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 label,
 i,
 span {
   display: inline-block;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 }
