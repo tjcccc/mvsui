@@ -8,7 +8,9 @@
         "tsc:w": "tsc -w",
         "dir": "npm ls --depth=0",
         "scss": "sass --update --style compressed scss/mvsui.scss:css/mvsui.css",
-        "scss:watch": "sass --watch --style compressed scss/mvsui.scss:css/mvsui.css"
+        "scss:watch": "sass --watch --style compressed scss/mvsui.scss:css/mvsui.css",
+        "build:reset": "sass --update --style compressed scss/mvsui.reset.scss:css/mvsui.reset.css",
+        "watch:reset": "sass --watch --style compressed scss/mvsui.reset.scss:css/mvsui.reset.css"
     },
     "keywords": [
         "mvsui",

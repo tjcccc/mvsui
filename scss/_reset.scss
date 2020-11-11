@@ -1,3 +1,12 @@
+/*
+* References:
+* - normalize.css v8.0.1
+* - minireset.css v0.0.6
+* - ress v3.0.0
+* - modern-css-reset v1.3.0
+* - marx v3.0.8
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -102,23 +111,23 @@ h6 {
 }
 
 h1 {
-  font-size: 3.2em;
-}
-
-h2 {
-  font-size: 2.8em;
-}
-
-h3 {
   font-size: 2.4em;
 }
 
-h4 {
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
   font-size: 2.0em;
 }
 
-h5 {
+h4 {
   font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.6em;
 }
 
 h6 {
@@ -138,4 +147,8 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+iframe {
+  border: 0;
 }
