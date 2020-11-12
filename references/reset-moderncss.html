@@ -36,11 +36,12 @@
     <span>Span text</span>
   </div>
   <hr>
-  <article id="common-style" style="font-size: 1.4px;">
+  <article id="common-style" style="font-size: 14px;">
     <h1>Common Article</h1>
     <h2>Sub Title</h2>
     <h3>H3 Title</h3>
     <p>Content base font-size: 14px</p>
+    <a href="#">Anchor Link</a>
   </article>
   <hr>
   <div id="list">
@@ -57,12 +58,28 @@
   </div>
   <hr>
   <form action="">
-    <div>
+    <fieldset>
       <label for="">Label</label>
       <input type="text">
       <input type="password">
+      <select name="" id="">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+      </select>
       <input type="button" value="input button">
-    </div>
+    </fieldset>
+    <fieldset>
+      <div><input type="checkbox"><label>Check 1</label></div>
+      <div><input type="checkbox"><label>Check 2</label></div>
+    </fieldset>
+    <fieldset>
+      <div><input type="radio"><label>Option A</label></div>
+      <div><input type="radio"><label>Option B</label></div>
+    </fieldset>
+    <fieldset>
+      <textarea name="" id="" cols="40" rows="5"></textarea>
+    </fieldset>
     <div>
       <button>Button</button>
     </div>
@@ -72,7 +89,7 @@
   <hr>
   <pre>
     <code>
-      #include <stdio.h>
+      #include &lt;stdio.h&gt;
       int main() {
         printf("hello, world.");
         return 0;
