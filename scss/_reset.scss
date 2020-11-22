@@ -73,13 +73,13 @@ td {
 th,
 td {
   display: table-cell;
-  padding: 0.5em 1em;
+  padding: 0.4em 0.8em;
 }
 
 ul,
 ol {
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
   padding-inline-start: 2em;
 }
 
@@ -99,6 +99,7 @@ fieldset {
   padding-block-end: 0.2em;
   padding-inline-start: 0;
   padding-inline-end: 0;
+  vertical-align: middle;
 }
 
 input {
@@ -106,11 +107,11 @@ input {
 }
 
 select {
-  padding: 0.3em 0.4em;
+  padding: 0.4em 0.4em;
 }
 
 textarea {
-  padding: 1em;
+  padding: 0.8em;
 }
 
 /*
@@ -192,10 +193,10 @@ button,
   font-size: inherit;
   &:hover {
     color: #333;
-    background-color: #dedede;
+    background-color: darken(#efefef, 5%);
   }
   &:active {
-    background: #cdcdcd;
+    background: darken(#efefef, 10%);
   }
   &:focus {
     outline: none;
