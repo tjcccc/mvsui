@@ -75,3 +75,7 @@ compressed
 
 # build
 dist/
+build/
+
+# test
+test/

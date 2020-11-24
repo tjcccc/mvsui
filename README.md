@@ -2,18 +2,44 @@
 
 A lightweight CSS Framework.
 
-## CSS reset style
+## Installation
 
-CSS files:
+```bash
+npm install --save mvsui
+# or
+yarn add mvsui
+```
 
-- `mvsui.reset.css`
-- `mvsui.reset.min.css`
+## Usage
 
-## Standred UI style
+### CSS reset only
 
-CSS files:
+HTML:
 
-- `mvsui.css`
-- `mvsui.min.css`
+```html
+<link rel="stylesheet" href="{node_modules path}/dist/mvsui.reset.min.css" />
+```
 
-reset styles have been included.
+JS:
+
+```js
+import 'mvsui/dist/mvsui.reset.min.css';
+```
+
+### The mvsui style
+
+(Not finished, developing...)
+
+Reset styles is included.
+
+HTML:
+
+```html
+<link rel="stylesheet" href="{node_modules path}/dist/mvsui.min.css" />
+```
+
+JS:
+
+```js
+import 'mvsui/dist/mvsui.min.css';
+```
