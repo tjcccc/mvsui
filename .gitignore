@@ -72,3 +72,6 @@ validation-status.json
 test
 typings
 compressed
+
+# build
+dist/

@@ -2,14 +2,14 @@
     "name": "mvsui",
     "project": "mvsui",
     "description": "An UI library.",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "scripts": {
         "tsc": "tsc",
         "tsc:w": "tsc -w",
         "dir": "npm ls --depth=0",
-        "build:reset": "sass --style=expanded scss/mvsui.reset.scss:css/mvsui.reset.css && sass --style=compressed scss/mvsui.reset.scss:css/mvsui.reset.min.css",
-        "build:ui": "sass --style=expanded scss/mvsui.scss:css/mvsui.css && sass --style=compressed scss/mvsui.reset.scss:css/mvsui.min.css",
-        "watch:reset": "sass --watch --style=compressed scss/mvsui.reset.scss:css/mvsui.reset.min.css",
+        "build:reset": "sass --style=expanded scss/mvsui.reset.scss:dist/mvsui.reset.css && sass --style=compressed scss/mvsui.reset.scss:dist/mvsui.reset.min.css",
+        "build:ui": "sass --style=expanded scss/mvsui.scss:dist/mvsui.css && sass --style=compressed scss/mvsui.reset.scss:dist/mvsui.min.css",
+        "watch:reset": "sass --watch --yttttttttttttttttttstyle=compressed scss/mvsui.reset.scss:css/mvsui.reset.min.css",
         "watch:ui": "sass --watch --style=compressed scss/mvsui.scss:css/mvsui.min.css"
     },
     "keywords": [
