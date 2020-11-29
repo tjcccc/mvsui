@@ -2,42 +2,49 @@
 
 // general size
 
+// font size
+$font-xs: 0.9 * $font-size-base;
+$font-s: 1.2 * $font-size-base;
+$font-m: 1.4 * $font-size-base;
+$font-l: 1.8 * $font-size-base;
+$font-xl: 2.2 * $font-size-base;
+
+.font-xs {
+  font-size: $font-xs;
+}
+
+.font-s {
+  font-size: $font-s;
+}
+
+.font-m {
+  font-size: $font-m;
+}
+
+.font-l {
+  font-size: $font-l;
+}
+
+.font-xl {
+  font-size: $font-xl;
+}
+
 p {
-  font-size: $font-size-m;
+  font-size: $font-m;
 }
 
 header {
-  font-size: $font-size-m;
+  font-size: $font-m;
 }
 
 nav {
-  font-size: $font-size-l;
+  font-size: $font-l;
 }
 
 main {
-  font-size: $font-size-m;
+  font-size: $font-m;
 }
 
 aside {
-  font-size: $font-size-m;
-}
-
-.font-size-xs {
-  font-size: $font-size-xs;
-}
-
-.font-size-s {
-  font-size: $font-size-s;
-}
-
-.font-size-m {
-  font-size: $font-size-m;
-}
-
-.font-size-l {
-  font-size: $font-size-l;
-}
-
-.font-size-xl {
-  font-size: $font-size-xl;
+  font-size: $font-m;
 }

@@ -1,0 +1,14 @@
+@import 'spec';
+@import 'color';
+
+a {
+  &:link {
+    color: $blue;
+  }
+  &:hover {
+    color: darken($blue, $darken-amount);
+  }
+  &:visited {
+    color: $blue;
+  }
+}

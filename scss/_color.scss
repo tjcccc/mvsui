@@ -1,13 +1,74 @@
 @import 'spec';
 
-a {
-  &:link {
-    color: $blue;
+// mixins
+@mixin color-style($colorname, $color) {
+  .#{$colorname} {
+    color: $color;
+    border-color: inherit;
   }
-  &:hover {
-    color: darken($blue, $darken-amount);
+  .#{$colorname}-l1 {
+    color: lighten($color: $color, $amount: $color-lighten);
+    border-color: inherit;
   }
-  &:visited {
-    color: $blue;
+  .#{$colorname}-l2 {
+    color: lighten($color: $color, $amount: $color-lighten * 2);
+    border-color: inherit;
+  }
+  .#{$colorname}-l3 {
+    color: lighten($color: $color, $amount: $color-lighten * 3);
+    border-color: inherit;
+  }
+  .#{$colorname}-d1 {
+    color: darken($color: $color, $amount: $color-darken);
+    border-color: inherit;
+  }
+  .#{$colorname}-d2 {
+    color: darken($color: $color, $amount: $color-darken * 2);
+    border-color: inherit;
+  }
+  .#{$colorname}-d3 {
+    color: darken($color: $color, $amount: $color-darken * 3);
+    border-color: inherit;
+  }
+
+  .bg-#{$colorname} {
+    background-color: $color;
+  }
+  .bg-#{$colorname}-l1 {
+    background-color: lighten($color: $color, $amount: $color-lighten);
+  }
+  .bg-#{$colorname}-l2 {
+    background-color: lighten($color: $color, $amount: $color-lighten * 2);
+  }
+  .bg-#{$colorname}-l3 {
+    background-color: lighten($color: $color, $amount: $color-lighten * 3);
+  }
+  .bg-#{$colorname}-d1 {
+    background-color: darken($color: $color, $amount: $color-darken);
+  }
+  .bg-#{$colorname}-d2 {
+    background-color: darken($color: $color, $amount: $color-darken * 2);
+  }
+  .bg-#{$colorname}-d3 {
+    background-color: darken($color: $color, $amount: $color-darken * 3);
+  }
+
+  .border-#{$colorname} {
+    border-color: $color;
   }
 }
+
+@include color-style('white', $white);
+@include color-style('black', $black);
+@include color-style('red', $red);
+@include color-style('orange', $orange);
+@include color-style('yellow', $yellow);
+@include color-style('green', $green);
+@include color-style('indigo', $indigo);
+@include color-style('blue', $blue);
+@include color-style('purple', $purple);
+@include color-style('brown', $brown);
+@include color-style('pink', $pink);
+@include color-style('teal', $teal);
+@include color-style('gray', $gray);
+@include color-style('pale', $pale);
