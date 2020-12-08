@@ -1,0 +1,29 @@
+@import 'spec';
+
+.border-r1 {
+  border-radius: 1 * $border-radious-base;
+}
+
+.border-r2 {
+  border-radius: 2 * $border-radious-base;
+}
+
+.border-r3 {
+  border-radius: 3 * $border-radious-base;
+}
+
+.border-r4 {
+  border-radius: 4 * $border-radious-base;
+}
+
+.border-r5 {
+  border-radius: 5 * $border-radious-base;
+}
+
+.border-qr {
+  border-radius: 25%;
+}
+
+.round {
+  border-radius: 50%;
+}
