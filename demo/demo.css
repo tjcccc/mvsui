@@ -6,10 +6,22 @@
   align-items: flex-start;
   margin: 10px;
 }
+
 .rect {
   width: 80px;
   height: 80px;
   border-width: 1px;
   border-style: solid;
   margin-right: 10px;
+}
+
+.rect-b0 {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.page-sticky {
+  position: sticky;
+  top: 20px;
 }

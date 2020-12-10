@@ -25,13 +25,14 @@
     <a href="#">Table</a>
     <a href="#">Article</a>
   </nav>
-  <div class="flex-row right-extend h-margin-m">
+  <div id="page" class="flex-row right-extend h-margin-m">
     <aside class="h-padding-m v-padding-s">
       <h6>SIDEBAR MENU</h6>
       <div class="v-menu level-1 font-l">
-        <a href="">Font Size</a>
-        <a href="">Color</a>
-        <a href="">Shapes</a>
+        <a href="#font-sizes">Font Size</a>
+        <a href="#colors">Color</a>
+        <a href="#shapes">Shapes</a>
+        <a href="#shadows">Shadows</a>
         <a href="">Layout</a>
         <div class="v-menu level-2 h-padding-s font-m">
           <a href="">Appearance</a>
@@ -51,183 +52,223 @@
     <main class="h-padding-m v-padding-s">
       <h2 class="white bg-green-d2 h-padding-s v-padding-s border-r1">Spec</h2>
       <div id="font-sizes">
-        <h3>Font Size</h3>
+        <h3 class="border-w1 border-1010">Font Size</h3>
         <p>Base size (1b): 1rem</p>
-        <div>
-          <h4>font-size-xs: 0.9b</h4>
-          <p class="font-xs">All work and no play makes Jack a dull boy.</p>
-        </div>
-        <div>
-          <h4>font-size-s: 1.2b</h4>
-          <p class="font-s">All work and no play makes Jack a dull boy.</p>
-        </div>
-        <div>
-          <h4>font-size-m: 1.4b</h4>
-          <p class="font-m">All work and no play makes Jack a dull boy.</p>
-        </div>
-        <div>
-          <h4>font-size-l: 1.8b</h4>
-          <p class="font-l">All work and no play makes Jack a dull boy.</p>
-        </div>
-        <div>
-          <h4>font-size-xl: 2.2b</h4>
-          <p class="font-xl">All work and no play makes Jack a dull boy.</p>
+        <div class="h-padding-s">
+          <div>
+            <h4>font-size-xs: 0.9b</h4>
+            <p class="font-xs">All work and no play makes Jack a dull boy.</p>
+          </div>
+          <div>
+            <h4>font-size-s: 1.2b</h4>
+            <p class="font-s">All work and no play makes Jack a dull boy.</p>
+          </div>
+          <div>
+            <h4>font-size-m: 1.4b</h4>
+            <p class="font-m">All work and no play makes Jack a dull boy.</p>
+          </div>
+          <div>
+            <h4>font-size-l: 1.8b</h4>
+            <p class="font-l">All work and no play makes Jack a dull boy.</p>
+          </div>
+          <div>
+            <h4>font-size-xl: 2.2b</h4>
+            <p class="font-xl">All work and no play makes Jack a dull boy.</p>
+          </div>
         </div>
       </div>
       <div id="colors">
-        <h3>Colors</h3>
-        <div class="rect-group">
-          <div class="rect red" >Red words</div>
-          <div class="rect bg-red"> Red bg</div>
-          <div class="rect border-red"> Red border</div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-white-l3"></div>
-          <div class="rect bg-white-l2"></div>
-          <div class="rect bg-white-l1"></div>
-          <div class="rect bg-white"></div>
-          <div class="rect bg-white-d1"></div>
-          <div class="rect bg-white-d2"></div>
-          <div class="rect bg-white-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-black-l3"></div>
-          <div class="rect bg-black-l2"></div>
-          <div class="rect bg-black-l1"></div>
-          <div class="rect bg-black"></div>
-          <div class="rect bg-black-d1"></div>
-          <div class="rect bg-black-d2"></div>
-          <div class="rect bg-black-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-red-l3"></div>
-          <div class="rect bg-red-l2"></div>
-          <div class="rect bg-red-l1"></div>
-          <div class="rect bg-red"></div>
-          <div class="rect bg-red-d1"></div>
-          <div class="rect bg-red-d2"></div>
-          <div class="rect bg-red-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-orange-l3"></div>
-          <div class="rect bg-orange-l2"></div>
-          <div class="rect bg-orange-l1"></div>
-          <div class="rect bg-orange"></div>
-          <div class="rect bg-orange-d1"></div>
-          <div class="rect bg-orange-d2"></div>
-          <div class="rect bg-orange-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-yellow-l3"></div>
-          <div class="rect bg-yellow-l2"></div>
-          <div class="rect bg-yellow-l1"></div>
-          <div class="rect bg-yellow"></div>
-          <div class="rect bg-yellow-d1"></div>
-          <div class="rect bg-yellow-d2"></div>
-          <div class="rect bg-yellow-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-green-l3"></div>
-          <div class="rect bg-green-l2"></div>
-          <div class="rect bg-green-l1"></div>
-          <div class="rect bg-green"></div>
-          <div class="rect bg-green-d1"></div>
-          <div class="rect bg-green-d2"></div>
-          <div class="rect bg-green-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-indigo-l3"></div>
-          <div class="rect bg-indigo-l2"></div>
-          <div class="rect bg-indigo-l1"></div>
-          <div class="rect bg-indigo"></div>
-          <div class="rect bg-indigo-d1"></div>
-          <div class="rect bg-indigo-d2"></div>
-          <div class="rect bg-indigo-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-blue-l3"></div>
-          <div class="rect bg-blue-l2"></div>
-          <div class="rect bg-blue-l1"></div>
-          <div class="rect bg-blue"></div>
-          <div class="rect bg-blue-d1"></div>
-          <div class="rect bg-blue-d2"></div>
-          <div class="rect bg-blue-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-purple-l3"></div>
-          <div class="rect bg-purple-l2"></div>
-          <div class="rect bg-purple-l1"></div>
-          <div class="rect bg-purple"></div>
-          <div class="rect bg-purple-d1"></div>
-          <div class="rect bg-purple-d2"></div>
-          <div class="rect bg-purple-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-brown-l3"></div>
-          <div class="rect bg-brown-l2"></div>
-          <div class="rect bg-brown-l1"></div>
-          <div class="rect bg-brown"></div>
-          <div class="rect bg-brown-d1"></div>
-          <div class="rect bg-brown-d2"></div>
-          <div class="rect bg-brown-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-pink-l3"></div>
-          <div class="rect bg-pink-l2"></div>
-          <div class="rect bg-pink-l1"></div>
-          <div class="rect bg-pink"></div>
-          <div class="rect bg-pink-d1"></div>
-          <div class="rect bg-pink-d2"></div>
-          <div class="rect bg-pink-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-teal-l3"></div>
-          <div class="rect bg-teal-l2"></div>
-          <div class="rect bg-teal-l1"></div>
-          <div class="rect bg-teal"></div>
-          <div class="rect bg-teal-d1"></div>
-          <div class="rect bg-teal-d2"></div>
-          <div class="rect bg-teal-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-gray-l3"></div>
-          <div class="rect bg-gray-l2"></div>
-          <div class="rect bg-gray-l1"></div>
-          <div class="rect bg-gray"></div>
-          <div class="rect bg-gray-d1"></div>
-          <div class="rect bg-gray-d2"></div>
-          <div class="rect bg-gray-d3"></div>
-        </div>
-        <div class="rect-group">
-          <div class="rect bg-pale-l3"></div>
-          <div class="rect bg-pale-l2"></div>
-          <div class="rect bg-pale-l1"></div>
-          <div class="rect bg-pale"></div>
-          <div class="rect bg-pale-d1"></div>
-          <div class="rect bg-pale-d2"></div>
-          <div class="rect bg-pale-d3"></div>
+        <h3 class="border-w1 border-1010">Color</h3>
+        <div class="h-padding-s">
+          <div class="rect-group">
+            <div class="rect red" >Red text</div>
+            <div class="rect bg-red"> Red bg</div>
+            <div class="rect border-red"> Red border</div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-white-l3"></div>
+            <div class="rect bg-white-l2"></div>
+            <div class="rect bg-white-l1"></div>
+            <div class="rect bg-white"></div>
+            <div class="rect bg-white-d1"></div>
+            <div class="rect bg-white-d2"></div>
+            <div class="rect bg-white-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-black-l3"></div>
+            <div class="rect bg-black-l2"></div>
+            <div class="rect bg-black-l1"></div>
+            <div class="rect bg-black"></div>
+            <div class="rect bg-black-d1"></div>
+            <div class="rect bg-black-d2"></div>
+            <div class="rect bg-black-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-red-l3"></div>
+            <div class="rect bg-red-l2"></div>
+            <div class="rect bg-red-l1"></div>
+            <div class="rect bg-red"></div>
+            <div class="rect bg-red-d1"></div>
+            <div class="rect bg-red-d2"></div>
+            <div class="rect bg-red-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-orange-l3"></div>
+            <div class="rect bg-orange-l2"></div>
+            <div class="rect bg-orange-l1"></div>
+            <div class="rect bg-orange"></div>
+            <div class="rect bg-orange-d1"></div>
+            <div class="rect bg-orange-d2"></div>
+            <div class="rect bg-orange-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-yellow-l3"></div>
+            <div class="rect bg-yellow-l2"></div>
+            <div class="rect bg-yellow-l1"></div>
+            <div class="rect bg-yellow"></div>
+            <div class="rect bg-yellow-d1"></div>
+            <div class="rect bg-yellow-d2"></div>
+            <div class="rect bg-yellow-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-green-l3"></div>
+            <div class="rect bg-green-l2"></div>
+            <div class="rect bg-green-l1"></div>
+            <div class="rect bg-green"></div>
+            <div class="rect bg-green-d1"></div>
+            <div class="rect bg-green-d2"></div>
+            <div class="rect bg-green-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-indigo-l3"></div>
+            <div class="rect bg-indigo-l2"></div>
+            <div class="rect bg-indigo-l1"></div>
+            <div class="rect bg-indigo"></div>
+            <div class="rect bg-indigo-d1"></div>
+            <div class="rect bg-indigo-d2"></div>
+            <div class="rect bg-indigo-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-blue-l3"></div>
+            <div class="rect bg-blue-l2"></div>
+            <div class="rect bg-blue-l1"></div>
+            <div class="rect bg-blue"></div>
+            <div class="rect bg-blue-d1"></div>
+            <div class="rect bg-blue-d2"></div>
+            <div class="rect bg-blue-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-purple-l3"></div>
+            <div class="rect bg-purple-l2"></div>
+            <div class="rect bg-purple-l1"></div>
+            <div class="rect bg-purple"></div>
+            <div class="rect bg-purple-d1"></div>
+            <div class="rect bg-purple-d2"></div>
+            <div class="rect bg-purple-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-brown-l3"></div>
+            <div class="rect bg-brown-l2"></div>
+            <div class="rect bg-brown-l1"></div>
+            <div class="rect bg-brown"></div>
+            <div class="rect bg-brown-d1"></div>
+            <div class="rect bg-brown-d2"></div>
+            <div class="rect bg-brown-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-pink-l3"></div>
+            <div class="rect bg-pink-l2"></div>
+            <div class="rect bg-pink-l1"></div>
+            <div class="rect bg-pink"></div>
+            <div class="rect bg-pink-d1"></div>
+            <div class="rect bg-pink-d2"></div>
+            <div class="rect bg-pink-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-teal-l3"></div>
+            <div class="rect bg-teal-l2"></div>
+            <div class="rect bg-teal-l1"></div>
+            <div class="rect bg-teal"></div>
+            <div class="rect bg-teal-d1"></div>
+            <div class="rect bg-teal-d2"></div>
+            <div class="rect bg-teal-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-gray-l3"></div>
+            <div class="rect bg-gray-l2"></div>
+            <div class="rect bg-gray-l1"></div>
+            <div class="rect bg-gray"></div>
+            <div class="rect bg-gray-d1"></div>
+            <div class="rect bg-gray-d2"></div>
+            <div class="rect bg-gray-d3"></div>
+          </div>
+          <div class="rect-group">
+            <div class="rect bg-pale-l3"></div>
+            <div class="rect bg-pale-l2"></div>
+            <div class="rect bg-pale-l1"></div>
+            <div class="rect bg-pale"></div>
+            <div class="rect bg-pale-d1"></div>
+            <div class="rect bg-pale-d2"></div>
+            <div class="rect bg-pale-d3"></div>
+          </div>
         </div>
       </div>
       <div id="shapes">
-        <h3>Shapes</h3>
-        <div id="radious-rect">
-          <h4>Border Radious Level 1</h4>
-          <div class="rect border-r1"></div>
-          <h4>Border Radious Level 2</h4>
-          <div class="rect border-r2"></div>
-          <h4>Border Radious Level 3</h4>
-          <div class="rect border-r3"></div>
-          <h4>Border Radious Level 4</h4>
-          <div class="rect border-r4"></div>
-          <h4>Border Radious Level 5</h4>
-          <div class="rect border-r5"></div>
-          <h4>Border Radious 25% Round</h4>
-          <div class="rect border-qr"></div>
-          <h4>Round</h4>
-          <div class="rect round"></div>
+        <h3 class="border-w1 border-1010">Shapes</h3>
+        <div class="h-padding-s">
+          <div id="solid-border">
+            <h4>Solid Border</h4>
+            <h5>Border Width Level 1</h5>
+            <div class="rect-b0 border-w1"></div>
+            <h5>Border Width Level 2</h5>
+            <div class="rect-b0 border-w2"></div>
+            <h5>Border Width Level 3</h5>
+            <div class="rect-b0 border-w4"></div>
+            <h5>Border Width Level 4</h5>
+            <div class="rect-b0 border-w8"></div>
+          </div>
+          <div id="radious-rect">
+            <h4>Border Raidous</h4>
+            <h5>Level 1</h5>
+            <div class="rect border-r1"></div>
+            <h5>Border Radious Level 2</h5>
+            <div class="rect border-r2"></div>
+            <h5>Border Radious Level 3</h5>
+            <div class="rect border-r3"></div>
+            <h5>Border Radious Level 4</h5>
+            <div class="rect border-r4"></div>
+            <h5>Border Radious Level 5</h5>
+            <div class="rect border-r5"></div>
+            <h5>Border Radious 25% Round</h5>
+            <div class="rect border-qr"></div>
+          </div>
+          <div id="round">
+            <h4>Round</h4>
+            <div class="rect round"></div>
+          </div>
+        </div>
+      </div>
+      <div id="shadows">
+        <h3 class="border-w1 border-1010">Color</h3>
+        <div class="h-padding-s">
+          <h4>Shadow (level 1)</h4>
+          <div class="rect-b0 border-r1 shadow"></div>
+          <h4>Shadow level 2</h4>
+          <div class="rect-b0 border-r1 shadow-l2"></div>
+          <h4>Shadow level 3</h4>
+          <div class="rect-b0 border-r1 shadow-l3"></div>
+          <h4>Shadow level 4</h4>
+          <div class="rect-b0 border-r1 shadow-l4"></div>
+          <h4>Shadow level 5</h4>
+          <div class="rect-b0 border-r1 shadow-l5"></div>
         </div>
       </div>
     </main>
+    <aside class="page-sticky">
+      <div>
+        <a href="#page">TOP</a>
+      </div>
+    </aside>
   </div>
   <footer class="text-center">
     <p>mvsui</p>

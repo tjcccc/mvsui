@@ -1,4 +1,34 @@
 @import 'spec';
+@import 'colors';
+
+// Solid Border
+
+@mixin border-style($borderwidth) {
+  .border-w#{$borderwidth} {
+    border-width: $borderwidth * 0.1rem;
+    border-style: solid;
+    border-color: $black;
+  }
+}
+
+@include border-style(1);
+@include border-style(2);
+@include border-style(4);
+@include border-style(8);
+
+// border-sides
+
+.border-0101 {
+  border-top: none;
+  border-bottom: none;
+}
+
+.border-1010 {
+  border-right: none;
+  border-left: none;
+}
+
+// border radious
 
 .border-r1 {
   border-radius: 1 * $border-radious-base;

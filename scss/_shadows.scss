@@ -1,0 +1,22 @@
+@import 'spec';
+
+.shadow,
+.shadow-l1 {
+  box-shadow: $shadow-base-x $shadow-base-y $shadow-base-z rgba(0, 0, 0, 0.25);
+}
+
+.shadow-l2 {
+  box-shadow: ($shadow-base-x * 2) ($shadow-base-y * 2) ($shadow-base-z * 2) rgba(0, 0, 0, 0.25);
+}
+
+.shadow-l3 {
+  box-shadow: ($shadow-base-x * 3) ($shadow-base-y * 3) ($shadow-base-z * 3) rgba(0, 0, 0, 0.25);
+}
+
+.shadow-l4 {
+  box-shadow: ($shadow-base-x * 4) ($shadow-base-y * 4) ($shadow-base-z * 4) rgba(0, 0, 0, 0.25);
+}
+
+.shadow-l5 {
+  box-shadow: ($shadow-base-x * 5) ($shadow-base-y * 5) ($shadow-base-z * 5) rgba(0, 0, 0, 0.25);
+}
