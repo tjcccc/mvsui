@@ -14,12 +14,39 @@ $padding-m: 4 * $padding-base;
 $padding-l: 6 * $padding-base;
 $padding-xl: 8 * $padding-base;
 
-// font-size
-$font-size-xs: 0.9 * $font-size-base;
-$font-size-s: 1.2 * $font-size-base;
-$font-size-m: 1.4 * $font-size-base;
-$font-size-l: 1.8 * $font-size-base;
-$font-size-xl: 2.2 * $font-size-base;
+// alignent
+
+@mixin text-align-left {
+  text-align: left;
+}
+
+@mixin text-align-center {
+  text-align: center;
+}
+
+@mixin text-align-right {
+  text-align: right;
+}
+
+@mixin text-align-justify {
+  text-align: justify;
+}
+
+.align-left {
+  @include text-align-left();
+}
+
+.align-center {
+  @include text-align-center();
+}
+
+.align-right {
+  @include text-align-right();
+}
+
+.align-justify {
+  @include text-align-justify();
+}
 
 .grid-container {
   display: grid;
@@ -56,6 +83,8 @@ p {
 .text-center {
   text-align: center;
 }
+
+// padding
 
 .h-padding-xs {
   padding-left: $padding-xs;
@@ -107,6 +136,8 @@ p {
   padding-bottom: $padding-xl;
 }
 
+// margin
+
 .h-margin-xs {
   margin-left: $margin-xs;
   margin-right: $margin-xs;
@@ -155,4 +186,14 @@ p {
 .v-margin-xl {
   margin-top: $margin-xl;
   margin-bottom: $margin-xl;
+}
+
+
+// flexbox
+
+.h-flexbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }

@@ -28,19 +28,23 @@
   <div id="page" class="flex-row right-extend h-margin-m">
     <aside class="h-padding-m v-padding-s">
       <h6>SIDEBAR MENU</h6>
-      <div class="v-menu level-1 font-l">
+      <div class="v-menu font-l">
         <a href="#font-sizes">Font Size</a>
         <a href="#colors">Color</a>
         <a href="#shapes">Shapes</a>
         <a href="#shadows">Shadows</a>
-        <a href="">Layout</a>
-        <div class="v-menu level-2 h-padding-s font-m">
-          <a href="">Appearance</a>
-          <a href="">Alignment</a>
-          <a href="">Margin</a>
-          <a href="">Padding</a>
-          <a href="">Container</a>
-          <div class="v-menu level-3 h-padding-s">
+        <a href="#appearance">Appearance</a>
+        <a href="#layout">Layout</a>
+        <div class="v-menu h-padding-s font-m">
+          <a href="#appearence">Appearance</a>
+          <a href="#alignment">Alignment</a>
+          <a href="#spacing">Spacing</a>
+          <div class="v-menu h-padding-s">
+            <a href="#margin">Margin</a>
+            <a href="#padding">Padding</a>
+          </div>
+          <a href="container">Container</a>
+          <div class="v-menu h-padding-s">
             <a href="">Flex</a>
             <a href="">Grid</a>
             <a href="">Nesting</a>
@@ -249,7 +253,7 @@
         </div>
       </div>
       <div id="shadows">
-        <h3 class="border-w1 border-1010">Color</h3>
+        <h3 class="border-w1 border-1010">Shadows</h3>
         <div class="h-padding-s">
           <h4>Shadow (level 1)</h4>
           <div class="rect-b0 border-r1 shadow"></div>
@@ -261,6 +265,61 @@
           <div class="rect-b0 border-r1 shadow-l4"></div>
           <h4>Shadow level 5</h4>
           <div class="rect-b0 border-r1 shadow-l5"></div>
+        </div>
+      </div>
+      <div id="appearance">
+        <h3 class="border-w1 border-1010">Appearance</h3>
+          <div class="h-padding-s">
+            <div class="h-padding-s">
+              <h4>Hide</h5>
+              <p>class: hide</p>
+              <div class="rect"></div>
+              <div class="rect hide"></div>
+              <div class="rect"></div>
+            </div>
+              <div class="h-padding-s">
+                <h4>Transparent</h5>
+                <p>class: transparent</p>
+                <div class="rect"></div>
+                <div class="rect transparent"></div>
+                <div class="rect"></div>
+              </div>
+              <div class="h-padding-s">
+                <h4>Half Transparent</h5>
+                <p>class: half-transparent</p>
+                <div class="rect bg-red"></div>
+                <div class="rect bg-red half-transparent"></div>
+                <div class="rect bg-red"></div>
+              </div>
+          </div>
+      </div>
+      <div id="layout">
+        <h3 class="border-w1 border-1010">Layout</h3>
+        </div>
+        <div id="alignment" class="h-padding-s">
+          <h4>Alignment</h4>
+          <div class="h-padding-s">
+            <div class="h-flexbox h-padding-s">
+              <div class="rect align-left">
+                class: align-left
+              </div>
+              <div class="rect align-center">
+                class: align-center
+              </div>
+              <div class="rect align-right">
+                class: align-right
+              </div>
+              <div class="rect align-justify">
+                class: align-justify
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="spacing" class="h-padding-s">
+          <h4>Spacing</h4>
+        </div>
+        <div id="container" class="h-padding-s">
+          <h4>Container</h4>
         </div>
       </div>
     </main>
