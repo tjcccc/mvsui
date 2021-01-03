@@ -1,20 +1,12 @@
 @import 'spec';
 
-// margin
-$margin-xs: 1 * $margin-base;
-$margin-s: 2 * $margin-base;
-$margin-m: 4 * $margin-base;
-$margin-l: 6 * $margin-base;
-$margin-xl: 8 * $margin-base;
+// p
 
-// padding
-$padding-xs: 1 * $padding-base;
-$padding-s: 2 * $padding-base;
-$padding-m: 4 * $padding-base;
-$padding-l: 6 * $padding-base;
-$padding-xl: 8 * $padding-base;
+p {
+  @extend .padding-xs;
+}
 
-// alignent
+// aligment
 
 @mixin text-align-left {
   text-align: left;
@@ -48,8 +40,88 @@ $padding-xl: 8 * $padding-base;
   @include text-align-justify();
 }
 
-.grid-container {
-  display: grid;
+.v-align-center {
+  position: relative;
+  & > *:first-of-type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// padding
+
+@mixin set-padding($top-index, $right-index, $bottom-index, $left-index) {
+  @if $top-index != 0 {
+    padding-top: nth($padding-level, $top-index);
+  }
+  @if $right-index != 0 {
+    padding-right: nth($padding-level, $right-index);
+  }
+  @if $bottom-index != 0 {
+    padding-bottom: nth($padding-level, $bottom-index);
+  }
+  @if $left-index != 0 {
+    padding-left: nth($padding-level, $left-index);
+  }
+}
+
+@mixin padding-style($index) {
+  .h-padding-#{nth($size-tags, $index)} {
+    @include set-padding(0, $index, 0, $index);
+  }
+  .v-padding-#{nth($size-tags, $index)} {
+    @include set-padding($index, 0, $index, 0);
+  }
+  .padding-#{nth($size-tags, $index)} {
+    @include set-padding($index, $index, $index, $index)
+  }
+}
+
+// margin
+
+@mixin set-margin($top-index, $right-index, $bottom-index, $left-index) {
+  @if $top-index != 0 {
+    margin-top: nth($margin-level, $top-index);
+  }
+  @if $right-index != 0 {
+    margin-right: nth($margin-level, $right-index);
+  }
+  @if $bottom-index != 0 {
+    margin-bottom: nth($margin-level, $bottom-index);
+  }
+  @if $left-index != 0 {
+    margin-left: nth($margin-level, $left-index);
+  }
+}
+
+@mixin margin-style($index) {
+  .h-margin-#{nth($size-tags, $index)} {
+    @include set-margin(0, $index, 0, $index);
+  }
+  .v-margin-#{nth($size-tags, $index)} {
+    @include set-margin($index, 0, $index, 0);
+  }
+  .margin-#{nth($size-tags, $index)} {
+    @include set-margin($index, $index, $index, $index)
+  }
+}
+
+// generate padding and margin
+
+@for $i from 1 through 5 {
+  @include padding-style($i);
+  @include margin-style($i);
+}
+
+// flexbox
+
+.h-flexbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .flex-row {
@@ -70,130 +142,7 @@ $padding-xl: 8 * $padding-base;
   }
 }
 
-nav {
-  & > * {
-    padding: $padding-xs;
-  }
-}
-
-p {
-  padding: $padding-xs;
-}
-
-.text-center {
-  text-align: center;
-}
-
-// padding
-
-.h-padding-xs {
-  padding-left: $padding-xs;
-  padding-right: $padding-xs;
-}
-
-.h-padding-s {
-  padding-left: $padding-s;
-  padding-right: $padding-s;
-}
-
-.h-padding-m {
-  padding-left: $padding-m;
-  padding-right: $padding-m;
-}
-
-.h-padding-l {
-  padding-left: $padding-l;
-  padding-right: $padding-l;
-}
-
-.h-padding-xl {
-  padding-left: $padding-xl;
-  padding-right: $padding-xl;
-}
-
-.v-padding-xs {
-  padding-top: $padding-xs;
-  padding-bottom: $padding-xs;
-}
-
-.v-padding-s {
-  padding-top: $padding-s;
-  padding-bottom: $padding-s;
-}
-
-.v-padding-m {
-  padding-top: $padding-m;
-  padding-bottom: $padding-m;
-}
-
-.v-padding-l {
-  padding-top: $padding-l;
-  padding-bottom: $padding-l;
-}
-
-.v-padding-xl {
-  padding-top: $padding-xl;
-  padding-bottom: $padding-xl;
-}
-
-// margin
-
-.h-margin-xs {
-  margin-left: $margin-xs;
-  margin-right: $margin-xs;
-}
-
-.h-margin-s {
-  margin-left: $margin-s;
-  margin-right: $margin-s;
-}
-
-.h-margin-m {
-  margin-left: $margin-m;
-  margin-right: $margin-m;
-}
-
-.h-margin-l {
-  margin-left: $margin-l;
-  margin-right: $margin-l;
-}
-
-.h-margin-xl {
-  margin-left: $margin-xl;
-  margin-right: $margin-xl;
-}
-
-.v-margin-xs {
-  margin-top: $margin-xs;
-  margin-bottom: $margin-xs;
-}
-
-.v-margin-s {
-  margin-top: $margin-s;
-  margin-bottom: $margin-s;
-}
-
-.v-margin-m {
-  margin-top: $margin-m;
-  margin-bottom: $margin-m;
-}
-
-.v-margin-l {
-  margin-top: $margin-l;
-  margin-bottom: $margin-l;
-}
-
-.v-margin-xl {
-  margin-top: $margin-xl;
-  margin-bottom: $margin-xl;
-}
-
-
-// flexbox
-
-.h-flexbox {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+// grid
+.grid-container {
+  display: grid;
 }

@@ -1,4 +1,4 @@
-.rect-group {
+.square-group {
   display: flex;
   border-color: black;
   flex-wrap: nowrap;
@@ -8,6 +8,14 @@
 }
 
 .rect {
+  width: 160px;
+  height: 80px;
+  border-width: 1px;
+  border-style: solid;
+  margin-right: 10px;
+}
+
+.square {
   width: 80px;
   height: 80px;
   border-width: 1px;
@@ -15,7 +23,7 @@
   margin-right: 10px;
 }
 
-.rect-b0 {
+.square-b0 {
   width: 80px;
   height: 80px;
   margin: 10px;

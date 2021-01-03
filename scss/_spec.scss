@@ -2,6 +2,9 @@
 
 // basic default value
 
+// tags
+$size-tags: 'xs' 's' 'm' 'l' 'xl';
+
 // color
 $white: rgb(250, 250, 250);
 $black: rgb(17, 17, 17);
@@ -26,6 +29,22 @@ $font-size-base: 1rem;
 // layout
 $margin-base: 0.8rem;
 $padding-base: 0.8rem;
+
+// padding
+$padding-xs: 1 * $padding-base;
+$padding-s: 2 * $padding-base;
+$padding-m: 4 * $padding-base;
+$padding-l: 6 * $padding-base;
+$padding-xl: 8 * $padding-base;
+$padding-level: $padding-xs $padding-s $padding-m $padding-l $padding-xl;
+
+// margin
+$margin-xs: 1 * $margin-base;
+$margin-s: 2 * $margin-base;
+$margin-m: 4 * $margin-base;
+$margin-l: 6 * $margin-base;
+$margin-xl: 8 * $margin-base;
+$margin-level: $margin-xs $margin-s $margin-m $margin-l $margin-xl;
 
 // border-radious
 $border-radious-base: 0.4rem;

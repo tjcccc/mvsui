@@ -2,7 +2,7 @@
     "name": "mvsui",
     "project": "mvsui",
     "description": "A lightweight CSS Framework.",
-    "version": "0.10.0",
+    "version": "0.11.0",
     "scripts": {
         "build:reset": "sass --style=expanded scss/mvsui.reset.scss:dist/mvsui.reset.css && sass --style=compressed scss/mvsui.reset.scss:dist/mvsui.reset.min.css",
         "build:ui": "sass --style=expanded scss/mvsui.scss:dist/mvsui.css && sass --style=compressed scss/mvsui.reset.scss:dist/mvsui.min.css",
