@@ -1,3 +1,6 @@
+@import 'spec';
+@import 'colors';
+
 .hide {
   display: none;
 }
@@ -8,4 +11,44 @@
 
 .half-transparent {
   opacity: 50%;
+}
+
+// anchor link
+
+a {
+  &:link {
+    color: darken($color: $blue, $amount: $color-darken);
+  }
+  &:hover {
+    color: darken($color: $blue, $amount: $color-darken * 2);
+  }
+  &:visited {
+    color: darken($color: $blue, $amount: $color-darken);
+  }
+}
+
+a.light {
+  &:link {
+    color: $white !important;
+  }
+  &:hover {
+    color: $teal !important;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $white;
+  }
+}
+
+a.slient-link {
+  &:link {
+    color: inherit;
+  }
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  &:visited {
+    color: inherit;
+  }
 }

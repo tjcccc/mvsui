@@ -1,5 +1,11 @@
 @import 'spec';
 
+// width
+
+.full-width {
+  width: 100%;
+}
+
 // p
 
 p {
@@ -115,6 +121,22 @@ p {
   @include margin-style($i);
 }
 
+// position
+
+.fixed {
+  position: fixed;
+}
+
+// float
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
 // flexbox
 
 .h-flexbox {
@@ -122,11 +144,52 @@ p {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+  &.items-start {
+    align-items: flex-start;
+  }
+  &.items-end {
+    align-items: flex-end;
+  }
+  &.items-center {
+    align-items: center;
+  }
+  &.items-stretch {
+    align-items: stretch;
+  }
+  &.items-baseline {
+    align-items: baseline;
+  }
+  &.content-start {
+    justify-content: flex-start;
+  }
+  &.content-end {
+    justify-content: flex-end;
+  }
+  &.content-center {
+    justify-content: center;
+  }
+  &.content-between {
+    justify-content: space-between;
+  }
+  &.content-around {
+    justify-content: space-around;
+  }
+  &.content-evenly {
+    justify-content: space-evenly;
+  }
+  & > .flex-span {
+    flex-grow: auto;
+  }
 }
 
-// grid
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+.h-flexbox.items-center {
+  align-items: center;
+}
+
+// box
+
+.v-box {
+  & > * {
+    display: block;
+  }
 }

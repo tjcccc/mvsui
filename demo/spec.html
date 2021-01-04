@@ -12,48 +12,48 @@
 </head>
 
 <body>
-  <header class="bg-blue-d2 h-padding-l v-padding-m">
-    <h1 class="white">MVSUI</h1>
-    <p class="white-d1">A Lightweight CSS Framework.</p>
+  <header class="fixed full-width bg-blue-d3 v-padding-xs">
+    <div class="h-flexbox items-center content-between">
+      <h1 class="white h-padding-xl"><a href="./spec.html" class="slient-link">MVSUI</a></h1>
+      <nav class="h-padding-l">
+        <a href="./spec.html" class="light padding-xs">Spec</a>
+        <a href="#" class="light padding-xs">Components</a>
+        <a href="#" class="light padding-xs">Forum</a>
+        <a href="#" class="light padding-xs">Table</a>
+        <a href="#" class="light padding-xs">Article</a>
+      </nav>
+    </div>
   </header>
-  <nav class="bg-white h-padding-l">
-    <span class="padding-xs">NAV</span>
-    <a href="./index.html" class="padding-xs">Home</a>
-    <a href="./spec.html" class="padding-xs">Spec</a>
-    <a href="#" class="padding-xs">Components</a>
-    <a href="#" class="padding-xs">Forum</a>
-    <a href="#" class="padding-xs">Table</a>
-    <a href="#" class="padding-xs">Article</a>
-  </nav>
-  <div id="page" class="h-flexbox h-margin-m">
-    <aside class="h-padding-m v-padding-s">
-      <h6>SIDEBAR MENU</h6>
-      <div class="v-menu font-l">
-        <a href="#font-sizes">Font Size</a>
-        <a href="#colors">Color</a>
-        <a href="#shapes">Shapes</a>
-        <a href="#shadows">Shadows</a>
+
+  <aside class="fixed h-padding-m v-padding-s" style="margin-top: 80px;">
+    <h6>SIDEBAR MENU</h6>
+    <div class="v-box font-l">
+      <a href="#font-sizes">Font Size</a>
+      <a href="#colors">Color</a>
+      <a href="#shapes">Shapes</a>
+      <a href="#shadows">Shadows</a>
+      <a href="#appearance">Appearance</a>
+      <a href="#layout">Layout</a>
+      <div class="v-box h-padding-s font-m">
         <a href="#appearance">Appearance</a>
-        <a href="#layout">Layout</a>
-        <div class="v-menu h-padding-s font-m">
-          <a href="#appearence">Appearance</a>
-          <a href="#alignment">Alignment</a>
-          <a href="#spacing">Spacing</a>
-          <div class="v-menu h-padding-s">
-            <a href="#padding">Padding</a>
-            <a href="#margin">Margin</a>
-          </div>
-          <a href="container">Container</a>
-          <div class="v-menu h-padding-s">
-            <a href="">Flex</a>
-            <a href="">Grid</a>
-            <a href="">Nesting</a>
-          </div>
+        <a href="#alignment">Alignment</a>
+        <a href="#spacing">Spacing</a>
+        <div class="v-box h-padding-s">
+          <a href="#padding">Padding</a>
+          <a href="#margin">Margin</a>
         </div>
-        <!-- <a href="">Menu Item 5</a> -->
+        <a href="container">Container</a>
+        <div class="v-box h-padding-s">
+          <a href="">Flex</a>
+          <a href="">Nesting</a>
+        </div>
       </div>
-    </aside>
-    <main class="h-padding-m v-padding-s">
+      <!-- <a href="">Menu Item 5</a> -->
+    </div>
+  </aside>
+
+  <div id="page" class="h-flexbox h-margin-m">
+    <main class="h-padding-m v-padding-s" style="margin: 80px 0 0 200px;">
       <h2 class="white bg-green-d2 h-padding-s v-padding-s border-r1">Spec</h2>
       <div id="font-sizes">
         <h3 class="border-w1 border-1010">Font Size</h3>
@@ -376,26 +376,14 @@
             </div>
           </div>
           <div class="padding-s">
-            <h5>Grid</h5>
-            <p>grid container</p>
-            <p>class: grid-container</p>
-            <div class="grid-container h-padding-xs">
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-            </div>
+            <h5>Nesting</h5>
+
           </div>
 
         </div>
       </div>
     </main>
-    <aside class="page-sticky">
+    <aside class="page-sticky" style="margin-top: 80px;">
       <div>
         <a href="#page">TOP</a>
       </div>
