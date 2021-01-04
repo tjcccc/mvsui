@@ -124,25 +124,9 @@ p {
   align-items: flex-start;
 }
 
-.flex-row {
-  display: flex;
-  flex-flow: nowrap;
-  justify-content: flex-start;
-  &.left-extend {
-
-  }
-  &.center-extend {
-
-  }
-  &.right-extend {
-
-  }
-  & > * {
-    align-self: start;
-  }
-}
-
 // grid
 .grid-container {
   display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
 }
