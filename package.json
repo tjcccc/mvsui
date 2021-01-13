@@ -7,7 +7,8 @@
         "build:reset": "sass --style=expanded scss/mvsui.reset.scss:dist/mvsui.reset.css && sass --style=compressed scss/mvsui.reset.scss:dist/mvsui.reset.min.css",
         "build:ui": "sass --style=expanded scss/mvsui.scss:dist/mvsui.css && sass --style=compressed scss/mvsui.reset.scss:dist/mvsui.min.css",
         "watch:reset": "sass --watch --style=compressed scss/mvsui.reset.scss:css/mvsui.reset.min.css",
-        "watch:ui": "sass --watch --style=compressed scss/mvsui.scss:css/mvsui.min.css"
+        "watch:ui": "sass --watch --style=compressed scss/mvsui.scss:css/mvsui.min.css",
+        "watch:demo": "sass --watch --style=compressed scss/mvsui.scss:demo/demo-vue/src/style/mvsui.min.css"
     },
     "keywords": [
         "css",

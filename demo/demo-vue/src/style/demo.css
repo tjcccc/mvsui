@@ -1,0 +1,35 @@
+.square-group {
+  display: flex;
+  border-color: black;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.rect {
+  width: 160px;
+  height: 80px;
+  border-width: 1px;
+  border-style: solid;
+  margin-right: 10px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border-width: 1px;
+  border-style: solid;
+  margin-right: 10px;
+}
+
+.square-b0 {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.page-sticky {
+  position: sticky;
+  top: 80px;
+}
