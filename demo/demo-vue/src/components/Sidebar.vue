@@ -1,39 +1,35 @@
 <template>
-  <aside class="fixed h-padding-m v-padding-s" style="margin-top: 80px;">
-    <h6>SIDEBAR MENU</h6>
+  <aside class="fixed h-padding-m v-padding-s bg-gray-l3 border-r2 h-margin-m" style="margin-top: 80px;">
+    <h6 class="v-padding-xs">SIDEBAR MENU</h6>
     <div class="v-box font-l">
-      <a href="#font-sizes">Font Size</a>
-      <a href="#colors">Color</a>
-      <a href="#shapes">Shapes</a>
-      <a href="#shadows">Shadows</a>
-      <a href="#appearance">Appearance</a>
-      <a href="#layout">Layout</a>
-      <div class="v-box h-padding-s font-m">
-        <a href="#appearance">Appearance</a>
-        <a href="#alignment">Alignment</a>
-        <a href="#spacing">Spacing</a>
-        <div class="v-box h-padding-s">
-          <a href="#padding">Padding</a>
-          <a href="#margin">Margin</a>
-        </div>
-        <a href="container">Container</a>
-        <div class="v-box h-padding-s">
-          <a href="">Flex</a>
-          <a href="">Nesting</a>
+      <!-- {{ listItems.count }} -->
+      <div v-for="listItem in listItems" :key="listItem.id" class="padding-xs">
+        <a :href="listItem.link">{{ listItem.name }}</a>
+        <div v-if="listItem.children.length > 0">
+          <div v-for="childListItem in listItem.children" :key="childListItem.id" class="v-box v-padding-xs h-padding-s font-m">
+            <a class="padding-xs" :href="childListItem.link">{{ childListItem.name }}</a>
+            <div v-if="childListItem.children.length > 0">
+              <div v-for="finalListItem in childListItem.children" :key="finalListItem.id" class="v-box v-padding-xs h-padding-s font-m">
+                <a class="padding-xs" :href="finalListItem.link">{{ finalListItem.name }}</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <a href="">Menu Item 5</a> -->
     </div>
   </aside>
 </template>
 
 <script>
+import data from '../data/siderbar.json';
+
 export default {
   name: 'Sidebar',
   props: {
   },
   data() {
     return {
+      listItems: data
     }
   }
 }

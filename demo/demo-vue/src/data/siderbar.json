@@ -1,0 +1,89 @@
+[
+  {
+    "id": 0,
+    "name": "Font Size",
+    "link": "",
+    "children": []
+  },
+  {
+    "id": 1,
+    "name": "Color",
+    "link": "",
+    "children": []
+  },
+  {
+    "id": 2,
+    "name": "Shapes",
+    "link": "",
+    "children": []
+  },
+  {
+    "id": 3,
+    "name": "Shadows",
+    "link": "",
+    "children": []
+  },
+  {
+    "id": 4,
+    "name": "Appearance",
+    "link": "",
+    "children": []
+  },
+  {
+    "id": 5,
+    "name": "Layout",
+    "link": "",
+    "children": [
+      {
+        "id": 6,
+        "name": "Appearance",
+        "link": "",
+        "children": []
+      },
+      {
+        "id": 7,
+        "name": "Alignment",
+        "link": "",
+        "children": []
+      },
+      {
+        "id": 8,
+        "name": "Spacing",
+        "link": "",
+        "children": [
+          {
+            "id": 10,
+            "name": "Padding",
+            "link": "",
+            "children": []
+          },
+          {
+            "id": 11,
+            "name": "Margin",
+            "link": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Container",
+        "link": "",
+        "children": [
+          {
+            "id": 12,
+            "name": "Flex",
+            "link": "",
+            "children": []
+          },
+          {
+            "id": 13,
+            "name": "Nesting",
+            "link": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
