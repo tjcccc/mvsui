@@ -340,7 +340,7 @@
 
 <script>
 export default {
-  name: 'ContentPage',
+  name: 'ContentContainer',
   props: {
   },
   data() {
