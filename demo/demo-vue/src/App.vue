@@ -1,9 +1,7 @@
 <template>
-  <root>
-    <Header title="msvui" />
-    <router-view></router-view>
-    <Footer />
-  </root>
+  <Header title="msvui" />
+  <router-view></router-view>
+  <Footer />
 </template>
 
 <script>

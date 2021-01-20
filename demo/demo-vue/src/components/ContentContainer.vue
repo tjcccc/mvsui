@@ -2,333 +2,13 @@
   <div id="page" class="h-flexbox h-margin-m">
     <main class="h-padding-m v-padding-s" style="margin: 80px 0 0 200px;">
       <h2 class="white bg-green-d2 h-padding-s v-padding-s border-r1">Spec</h2>
-      <div id="font-sizes">
-        <h3 class="border-w1 border-1010">Font Size</h3>
-        <p>Base size (1b): 1rem</p>
-        <div class="h-padding-s">
-          <div>
-            <h4>font-size-xs: 0.9b</h4>
-            <p class="font-xs">All work and no play makes Jack a dull boy.</p>
-          </div>
-          <div>
-            <h4>font-size-s: 1.2b</h4>
-            <p class="font-s">All work and no play makes Jack a dull boy.</p>
-          </div>
-          <div>
-            <h4>font-size-m: 1.4b</h4>
-            <p class="font-m">All work and no play makes Jack a dull boy.</p>
-          </div>
-          <div>
-            <h4>font-size-l: 1.8b</h4>
-            <p class="font-l">All work and no play makes Jack a dull boy.</p>
-          </div>
-          <div>
-            <h4>font-size-xl: 2.2b</h4>
-            <p class="font-xl">All work and no play makes Jack a dull boy.</p>
-          </div>
-        </div>
-      </div>
-      <div id="colors">
-        <h3 class="border-w1 border-1010">Color</h3>
-        <div class="h-padding-s">
-          <div class="square-group">
-            <div class="square red" >Red text</div>
-            <div class="square bg-red"> Red bg</div>
-            <div class="square border-red"> Red border</div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-white-l3"></div>
-            <div class="square bg-white-l2"></div>
-            <div class="square bg-white-l1"></div>
-            <div class="square bg-white"></div>
-            <div class="square bg-white-d1"></div>
-            <div class="square bg-white-d2"></div>
-            <div class="square bg-white-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-black-l3"></div>
-            <div class="square bg-black-l2"></div>
-            <div class="square bg-black-l1"></div>
-            <div class="square bg-black"></div>
-            <div class="square bg-black-d1"></div>
-            <div class="square bg-black-d2"></div>
-            <div class="square bg-black-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-red-l3"></div>
-            <div class="square bg-red-l2"></div>
-            <div class="square bg-red-l1"></div>
-            <div class="square bg-red"></div>
-            <div class="square bg-red-d1"></div>
-            <div class="square bg-red-d2"></div>
-            <div class="square bg-red-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-orange-l3"></div>
-            <div class="square bg-orange-l2"></div>
-            <div class="square bg-orange-l1"></div>
-            <div class="square bg-orange"></div>
-            <div class="square bg-orange-d1"></div>
-            <div class="square bg-orange-d2"></div>
-            <div class="square bg-orange-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-yellow-l3"></div>
-            <div class="square bg-yellow-l2"></div>
-            <div class="square bg-yellow-l1"></div>
-            <div class="square bg-yellow"></div>
-            <div class="square bg-yellow-d1"></div>
-            <div class="square bg-yellow-d2"></div>
-            <div class="square bg-yellow-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-green-l3"></div>
-            <div class="square bg-green-l2"></div>
-            <div class="square bg-green-l1"></div>
-            <div class="square bg-green"></div>
-            <div class="square bg-green-d1"></div>
-            <div class="square bg-green-d2"></div>
-            <div class="square bg-green-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-indigo-l3"></div>
-            <div class="square bg-indigo-l2"></div>
-            <div class="square bg-indigo-l1"></div>
-            <div class="square bg-indigo"></div>
-            <div class="square bg-indigo-d1"></div>
-            <div class="square bg-indigo-d2"></div>
-            <div class="square bg-indigo-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-blue-l3"></div>
-            <div class="square bg-blue-l2"></div>
-            <div class="square bg-blue-l1"></div>
-            <div class="square bg-blue"></div>
-            <div class="square bg-blue-d1"></div>
-            <div class="square bg-blue-d2"></div>
-            <div class="square bg-blue-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-purple-l3"></div>
-            <div class="square bg-purple-l2"></div>
-            <div class="square bg-purple-l1"></div>
-            <div class="square bg-purple"></div>
-            <div class="square bg-purple-d1"></div>
-            <div class="square bg-purple-d2"></div>
-            <div class="square bg-purple-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-brown-l3"></div>
-            <div class="square bg-brown-l2"></div>
-            <div class="square bg-brown-l1"></div>
-            <div class="square bg-brown"></div>
-            <div class="square bg-brown-d1"></div>
-            <div class="square bg-brown-d2"></div>
-            <div class="square bg-brown-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-pink-l3"></div>
-            <div class="square bg-pink-l2"></div>
-            <div class="square bg-pink-l1"></div>
-            <div class="square bg-pink"></div>
-            <div class="square bg-pink-d1"></div>
-            <div class="square bg-pink-d2"></div>
-            <div class="square bg-pink-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-teal-l3"></div>
-            <div class="square bg-teal-l2"></div>
-            <div class="square bg-teal-l1"></div>
-            <div class="square bg-teal"></div>
-            <div class="square bg-teal-d1"></div>
-            <div class="square bg-teal-d2"></div>
-            <div class="square bg-teal-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-gray-l3"></div>
-            <div class="square bg-gray-l2"></div>
-            <div class="square bg-gray-l1"></div>
-            <div class="square bg-gray"></div>
-            <div class="square bg-gray-d1"></div>
-            <div class="square bg-gray-d2"></div>
-            <div class="square bg-gray-d3"></div>
-          </div>
-          <div class="square-group">
-            <div class="square bg-pale-l3"></div>
-            <div class="square bg-pale-l2"></div>
-            <div class="square bg-pale-l1"></div>
-            <div class="square bg-pale"></div>
-            <div class="square bg-pale-d1"></div>
-            <div class="square bg-pale-d2"></div>
-            <div class="square bg-pale-d3"></div>
-          </div>
-        </div>
-      </div>
-      <div id="shapes">
-        <h3 class="border-w1 border-1010">Shapes</h3>
-        <div class="h-padding-s">
-          <div id="solid-border">
-            <h4>Solid Border</h4>
-            <h5>Border Width Level 1</h5>
-            <div class="square-b0 border-w1"></div>
-            <h5>Border Width Level 2</h5>
-            <div class="square-b0 border-w2"></div>
-            <h5>Border Width Level 3</h5>
-            <div class="square-b0 border-w4"></div>
-            <h5>Border Width Level 4</h5>
-            <div class="square-b0 border-w8"></div>
-          </div>
-          <div id="radious-square">
-            <h4>Border Raidous</h4>
-            <h5>Level 1</h5>
-            <div class="square border-r1"></div>
-            <h5>Border Radious Level 2</h5>
-            <div class="square border-r2"></div>
-            <h5>Border Radious Level 3</h5>
-            <div class="square border-r3"></div>
-            <h5>Border Radious Level 4</h5>
-            <div class="square border-r4"></div>
-            <h5>Border Radious Level 5</h5>
-            <div class="square border-r5"></div>
-            <h5>Border Radious 25% Round</h5>
-            <div class="square border-qr"></div>
-          </div>
-          <div id="round">
-            <h4>Round</h4>
-            <div class="square round"></div>
-          </div>
-        </div>
-      </div>
-      <div id="shadows">
-        <h3 class="border-w1 border-1010">Shadows</h3>
-        <div class="h-padding-s">
-          <h4>Shadow (level 1)</h4>
-          <div class="square-b0 border-r1 shadow"></div>
-          <h4>Shadow level 2</h4>
-          <div class="square-b0 border-r1 shadow-l2"></div>
-          <h4>Shadow level 3</h4>
-          <div class="square-b0 border-r1 shadow-l3"></div>
-          <h4>Shadow level 4</h4>
-          <div class="square-b0 border-r1 shadow-l4"></div>
-          <h4>Shadow level 5</h4>
-          <div class="square-b0 border-r1 shadow-l5"></div>
-        </div>
-      </div>
-      <div id="appearance">
-        <h3 class="border-w1 border-1010">Appearance</h3>
-          <div class="h-padding-s">
-            <div class="h-padding-s">
-              <h4>Hide</h4>
-              <p>class: hide</p>
-              <div class="square"></div>
-              <div class="square hide"></div>
-              <div class="square"></div>
-            </div>
-              <div class="h-padding-s">
-                <h4>Transparent</h4>
-                <p>class: transparent</p>
-                <div class="square"></div>
-                <div class="square transparent"></div>
-                <div class="square"></div>
-              </div>
-              <div class="h-padding-s">
-                <h4>Half Transparent</h4>
-                <p>class: half-transparent</p>
-                <div class="square bg-red"></div>
-                <div class="square bg-red half-transparent"></div>
-                <div class="square bg-red"></div>
-              </div>
-          </div>
-      </div>
-      <div id="layout">
-        <h3 class="border-w1 border-1010">Layout</h3>
-        <div id="alignment" class="h-padding-s">
-          <h4>Alignment</h4>
-          <div class="h-padding-s">
-            <div class="h-flexbox h-padding-s">
-              <div class="square align-left">
-                class: align-left
-              </div>
-              <div class="square align-center">
-                class: align-center
-              </div>
-              <div class="square align-right">
-                class: align-right
-              </div>
-              <div class="square align-justify">
-                class: align-justify
-              </div>
-            </div>
-            <div>
-              <h5>Vertical Center</h5>
-              <div class="rect align-center v-align-center">
-                <p>class: v-align-center</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="spacing" class="h-padding-s">
-          <h4>Spacing</h4>
-          <div class="padding-s">
-            <h5>Padding</h5>
-            <p>base padding space (b): 0.8rem</p>
-            <p>v-: vertical padding (top and bottom)</p>
-            <ul>
-              <li>class: v-padding-xs (1b)</li>
-              <li>class: v-padding-s (2b)</li>
-              <li>class: v-padding-m (4b)</li>
-              <li>class: v-padding-l (6b)</li>
-              <li>class: v-padding-xl (8b)</li>
-            </ul>
-            <p>h-: horizontal padding (right and left)</p>
-            <ul>
-              <li>class: h-padding-xs (1b)</li>
-              <li>class: h-padding-s (2b)</li>
-              <li>class: h-padding-m (4b)</li>
-              <li>class: h-padding-l (6b)</li>
-              <li>class: h-padding-xl (8b)</li>
-            </ul>
-          </div>
-          <div class="h-padding-s">
-            <h5>Margin</h5>
-            <p>base margin space (b): 0.8rem</p>
-            <p>v-: vertical margin (top and bottom)</p>
-            <ul>
-              <li>class: v-margin-xs (1b)</li>
-              <li>class: v-margin-s (2b)</li>
-              <li>class: v-margin-m (4b)</li>
-              <li>class: v-margin-l (6b)</li>
-              <li>class: v-margin-xl (8b)</li>
-            </ul>
-            <p>h-: horizontal margin (right and left)</p>
-            <ul>
-              <li>class: h-margin-xs (1b)</li>
-              <li>class: h-margin-s (2b)</li>
-              <li>class: h-margin-m (4b)</li>
-              <li>class: h-margin-l (6b)</li>
-              <li>class: h-margin-xl (8b)</li>
-            </ul>
-          </div>
-        </div>
-        <div id="container" class="h-padding-s">
-          <h4>Container</h4>
-          <div class="padding-s">
-            <h5>Flex</h5>
-            <p>horizontal flexbox</p>
-            <p>class: h-flexbox</p>
-            <div class="h-flexbox h-padding-xs">
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-            </div>
-          </div>
-          <div class="padding-s">
-            <h5>Nesting</h5>
-
-          </div>
-
-        </div>
-      </div>
+      <component :is="specComponent">
+      <!-- <FontSizeSpec />
+      <ColorSpec />
+      <ShapesSpec />
+      <ShadowsSpec />
+      <AppearanceSpec />
+      <LayoutSpec /> -->
     </main>
     <aside class="page-sticky" style="margin-top: 80px;">
       <div>
@@ -339,12 +19,28 @@
 </template>
 
 <script>
+import FontSizeSpec from './FontSize@Spec.vue';
+import ColorSpec from './Color@Spec.vue';
+import ShapesSpec from './Shapes@Spec.vue';
+import ShadowsSpec from './Shadows@Spec.vue';
+import AppearanceSpec from './Appearance@Spec.vue';
+import LayoutSpec from './Layout@Spec.vue';
+
 export default {
   name: 'ContentContainer',
+  components: {
+    FontSizeSpec,
+    ColorSpec,
+    ShapesSpec,
+    ShadowsSpec,
+    AppearanceSpec,
+    LayoutSpec
+  },
   props: {
   },
   data() {
     return {
+      specComponent: FontSizeSpec
     }
   }
 }

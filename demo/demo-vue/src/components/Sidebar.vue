@@ -1,16 +1,16 @@
 <template>
   <aside class="fixed h-padding-m v-padding-s bg-gray-l3 border-r2 h-margin-m" style="margin-top: 80px;">
     <h6 class="v-padding-xs">SIDEBAR MENU</h6>
-    <div class="v-box font-l">
-      <!-- {{ listItems.count }} -->
-      <div v-for="listItem in listItems" :key="listItem.id" class="padding-xs">
-        <a :href="listItem.link">{{ listItem.name }}</a>
-        <div v-if="listItem.children.length > 0">
-          <div v-for="childListItem in listItem.children" :key="childListItem.id" class="v-box v-padding-xs h-padding-s font-m">
-            <a class="padding-xs" :href="childListItem.link">{{ childListItem.name }}</a>
-            <div v-if="childListItem.children.length > 0">
-              <div v-for="finalListItem in childListItem.children" :key="finalListItem.id" class="v-box v-padding-xs h-padding-s font-m">
-                <a class="padding-xs" :href="finalListItem.link">{{ finalListItem.name }}</a>
+    <div v-if="menuItems" class="v-box font-l">
+      <!-- {{ menuItems.count }} -->
+      <div v-for="menuItem in menuItems" :key="menuItem.id" class="padding-xs">
+        <a :href="menuItem.link">{{ menuItem.name }}</a>
+        <div v-if="menuItem.children.length > 0">
+          <div v-for="childMenuItem in menuItem.children" :key="childMenuItem.id" class="v-box v-padding-xs h-padding-s font-m">
+            <a class="padding-xs" :href="childMenuItem.link">{{ childMenuItem.name }}</a>
+            <div v-if="childMenuItem.children.length > 0">
+              <div v-for="finalMenuItem in childMenuItem.children" :key="finalMenuItem.id" class="v-box v-padding-xs h-padding-s font-m">
+                <a class="padding-xs" :href="finalMenuItem.link">{{ finalMenuItem.name }}</a>
               </div>
             </div>
           </div>
@@ -21,16 +21,17 @@
 </template>
 
 <script>
-import data from '../data/siderbar.json';
 
 export default {
   name: 'Sidebar',
   props: {
+    menuItems: {
+      type: Array,
+      required: false
+    }
   },
   data() {
-    return {
-      listItems: data
-    }
+    return {}
   }
 }
 </script>

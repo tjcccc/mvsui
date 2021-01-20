@@ -1,13 +1,14 @@
 <template>
   <div id="spec-page">
-    <Sidebar />
+    <Sidebar :menuItems="sidebarMenuItems" />
     <ContentContainer />
   </div>
 </template>
 
 <script>
-import Sidebar from './SideBar.vue';
+import Sidebar from './Sidebar.vue';
 import ContentContainer from './ContentContainer.vue';
+import menuItems from '../data/siderbar-spec.json';
 
 export default {
   name: 'SpecPage',
@@ -18,8 +19,8 @@ export default {
   props: {},
   data() {
     return {
-
-    }
+      sidebarMenuItems: menuItems
+    };
   }
 }
 </script>

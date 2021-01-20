@@ -34,6 +34,6 @@
     "dependencies": {},
     "devDependencies": {},
     "files": [
-      "dist/*"
+        "dist/*"
     ]
 }
